@@ -1,4 +1,5 @@
-# 🚀 Gimmick Pad — **KMH FAMILY V13** (+ JUMP RAMP fizike!)
+# 🚀 Gimmick Pad — **KMH FAMILY V14** (+ MEGA RAMP me mure!)
+> **V14:** MEGA RAMP 10×25m (~20°) me **mure anësore të animuara** (streaks magenta që vrapojnë sipër mureve) — stili Hyperjump X-Games.
 > **V13:** U gjet bug-u i vërtetë i DAE-ve të gjeneruara (format i `<p>` indekseve) dhe u ndreq — tani të gjitha mesh-at e gjeneruara ndjekin konventën byte-për-byte të origjinalit.
 > **V11:** të 5 pad-at tani janë **klone ekzakte të pad-it 500 km/h që të punon** — i njëjti trup 6×18m, i njëjta strukturë e provuar; ndryshojnë vetëm kmh, look-i dhe animacioni.
 
@@ -39,7 +40,7 @@ Secili ka dizajn të vetin (chuckrona, numra, motive) + teksturë animacioni uni
 
 ## Instalimi
 1. Fshij V9 nga `Documents/BeamNG.drive/mods/`
-2. Vendos `dashplate_mathkuro_KMH_FAMILY_V13_JUMP.zip`
+2. Vendos `dashplate_mathkuro_KMH_FAMILY_V14_MEGARAMP.zip`
 3. Spawn nga Props → Gimmick Pad: **Boost (100km/h) — Pulse**, **— Strike**, **— Afterburn**, **(500km/h) XL**, **(1000km/h) — Warp**
 
 > Emrat në selector tani kanë stilin pas tyre — ashtu e di që V10 është live. Cache clear nëse loja të mban të vjetrin!
