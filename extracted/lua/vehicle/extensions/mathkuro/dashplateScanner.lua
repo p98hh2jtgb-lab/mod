@@ -123,7 +123,9 @@ scannerFunctions.dash = function(dashplateVid, params, dashplate)
   -- 速度ベクトル全体を上書きすると車体の上下動が毎回ゼロに固定され、
   -- Padの段差を乗り越えるサスペンションの動きを妨げてタイヤが破損する
   local vel = obj:getVelocity()
-  thrusters.applyVelocity(vel - dir * vel:dot(dir) + dir * speed, VELOCITY_RAMP_SEC)
+  -- スムーズ発進: 加速を数秒に分散させる（省略時は従来の瞬間加速） / smooth catapult ramp (default = original instant snap)
+  local rampSec = tonumber(params.dashplateDashRampSec) or VELOCITY_RAMP_SEC
+  thrusters.applyVelocity(vel - dir * vel:dot(dir) + dir * speed, rampSec)
 end
 
 scannerFunctions.deflateTires = function()

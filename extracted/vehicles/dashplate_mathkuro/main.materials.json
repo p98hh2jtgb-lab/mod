@@ -62,7 +62,7 @@
         "animFlags": 1,
         "scrollDir": [
           0,
-          1
+          -1
         ],
         "scrollSpeed": 1.5,
         "glow": true

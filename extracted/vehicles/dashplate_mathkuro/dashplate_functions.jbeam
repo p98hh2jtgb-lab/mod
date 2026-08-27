@@ -402,14 +402,15 @@
             ["$dashSpeedKMH", "range", "km/h", "Functionality", 100, 0, 10000, "Speed", "Acceleration speed"],
             ["$horizontalDirectionDegree", "range", "°", "Functionality", 0, -180, 180, "Horizontal Direction", "Direction of the speed boost: 0 for forward, 90 for right, -90 for left, 180 for backward"],
             ["$verticalAngleDegree", "range", "°", "Functionality", 0, 0, 90, "Vertical Angle", "Vertical angle of the speed boost: 0 for horizontal, 1~89 values for upward angle, 90 for just vertical angle"],
-            ["$dashplateTriggerRadius", "range", "m", "Functionality", 3, 3, 15, "Trigger Radius", "Detection radius around the pad (increase for XL pads)"]
+            ["$dashplateTriggerRadius", "range", "m", "Functionality", 3, 3, 15, "Trigger Radius", "Detection radius around the pad (increase for XL pads)"],
+            ["$dashplateDashRampSec", "range", "s", "Functionality", 0.05, 0.05, 3, "Launch Smoothness", "Time in seconds to reach the boost speed (higher = smoother catapult)"]
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"]
         ],
         "controller": [
             ["fileName"],
-            ["executeFunction", {"dashplateFunctionName":"dash", "dashplateSpeedKMH":"$dashSpeedKMH", "dashplateHorizontalDirectionDegree":"$horizontalDirectionDegree", "dashplateVerticalAngleDegree":"$verticalAngleDegree", "dashplateUseDashplateDirection":false, "dashplateTriggerRadius":"$dashplateTriggerRadius"}]
+            ["executeFunction", {"dashplateFunctionName":"dash", "dashplateSpeedKMH":"$dashSpeedKMH", "dashplateHorizontalDirectionDegree":"$horizontalDirectionDegree", "dashplateVerticalAngleDegree":"$verticalAngleDegree", "dashplateUseDashplateDirection":false, "dashplateTriggerRadius":"$dashplateTriggerRadius", "dashplateDashRampSec":"$dashplateDashRampSec"}]
         ]
     },
     "dashplate_function_dash_to_dashplate_direction": {
@@ -426,14 +427,15 @@
             ["$dashSpeedKMH", "range", "km/h", "Functionality", 100, 0, 10000, "Speed", "Acceleration speed"],
             ["$horizontalDirectionDegree", "range", "°", "Functionality", 0, -180, 180, "Horizontal Direction", "Direction of the speed boost: 0 for forward, 90 for right, -90 for left, 180 for backward"],
             ["$verticalAngleDegree", "range", "°", "Functionality", 0, 0, 90, "Vertical Angle", "Vertical angle of the speed boost: 0 for horizontal, 1~89 values for upward angle, 90 for just vertical angle"],
-            ["$dashplateTriggerRadius", "range", "m", "Functionality", 3, 3, 15, "Trigger Radius", "Detection radius around the pad (increase for XL pads)"]
+            ["$dashplateTriggerRadius", "range", "m", "Functionality", 3, 3, 15, "Trigger Radius", "Detection radius around the pad (increase for XL pads)"],
+            ["$dashplateDashRampSec", "range", "s", "Functionality", 0.05, 0.05, 3, "Launch Smoothness", "Time in seconds to reach the boost speed (higher = smoother catapult)"]
         ],
         "flexbodies": [
             ["mesh", "[group]:", "nonFlexMaterials"]
         ],
         "controller": [
             ["fileName"],
-            ["executeFunction", {"dashplateFunctionName":"dash", "dashplateSpeedKMH":"$dashSpeedKMH", "dashplateHorizontalDirectionDegree":"$horizontalDirectionDegree", "dashplateVerticalAngleDegree":"$verticalAngleDegree", "dashplateUseDashplateDirection":true, "dashplateTriggerRadius":"$dashplateTriggerRadius"}]
+            ["executeFunction", {"dashplateFunctionName":"dash", "dashplateSpeedKMH":"$dashSpeedKMH", "dashplateHorizontalDirectionDegree":"$horizontalDirectionDegree", "dashplateVerticalAngleDegree":"$verticalAngleDegree", "dashplateUseDashplateDirection":true, "dashplateTriggerRadius":"$dashplateTriggerRadius", "dashplateDashRampSec":"$dashplateDashRampSec"}]
         ]
     },
     "dashplate_function_deflate_tires": {

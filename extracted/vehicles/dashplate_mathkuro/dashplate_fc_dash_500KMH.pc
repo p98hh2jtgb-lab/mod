@@ -13,6 +13,7 @@
     "$dashSpeedKMH": 500,
     "$horizontalDirectionDegree": 0.0,
     "$verticalAngleDegree": 0.0,
-    "$dashplateTriggerRadius": 10
+    "$dashplateTriggerRadius": 10,
+    "$dashplateDashRampSec": 1.6
   }
 }

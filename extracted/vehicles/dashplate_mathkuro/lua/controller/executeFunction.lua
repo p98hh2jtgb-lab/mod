@@ -115,6 +115,8 @@ vluaFunctions.dash = function(vid, _, params)
   local speed = params.dashplateSpeedKMH and params.dashplateSpeedKMH / 3.6 or math.random(0, 1000)
   local hRad  = params.dashplateHorizontalDirectionDegree and math.rad(params.dashplateHorizontalDirectionDegree) or math.rad(math.random(-180, 180))
   local vRad  = params.dashplateVerticalAngleDegree and math.rad(params.dashplateVerticalAngleDegree) or math.rad(math.random(-90, 90))
+  -- スムーズ発進: 加速を数秒に分散させる（省略時は従来の瞬間加速） / smooth catapult ramp (default = original instant snap)
+  local rampSec = tonumber(params.dashplateDashRampSec) or VELOCITY_RAMP_SEC
   local dirExpr
   if params.dashplateUseDashplateDirection then
     dirExpr = serialize(adjustDashplateDirection(hRad, vRad))
@@ -126,7 +128,7 @@ vluaFunctions.dash = function(vid, _, params)
   -- Padの段差を乗り越えるサスペンションの動きを妨げてタイヤが破損する
   obj:queueObjectLuaCommand(vid, string.format(
     "local d=%s local v=obj:getVelocity() thrusters.applyVelocity(v-d*v:dot(d)+d*%.4f,%.4f)",
-    dirExpr, speed, VELOCITY_RAMP_SEC))
+    dirExpr, speed, rampSec))
 end
 
 vluaFunctions.deflateTires = function(vid)

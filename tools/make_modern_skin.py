@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 """New modern 'Cyber-Glass XL' design for the 500km/h pad overlay.
 Design space = driver view (342x1024, 1:3 aspect like the 3x9m pad).
-Final file = design upscaled to 1024x1024 and flipped vertically
-(image bottom = pad front, matching the mod's UV orientation)."""
+Final file = design upscaled to 1024x1024, NO flip (chevrons apex = texture top = launch direction, matching the liked V5 skin)."""
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 W, H = 342, 1024
@@ -85,7 +84,7 @@ txt = '500'
 gap = 20
 total_w = 3*digit_w + 2*gap
 x0 = (W - total_w) // 2
-y0 = 150
+y0 = 440
 for i, ch in enumerate(txt):
     draw_digit(gd, ch, x0 + i*(digit_w+gap), y0, WHITE + (255,))
     draw_digit(gd, ch, x0 + i*(digit_w+gap), y0, CYAN + (60,))   # tint bloom
@@ -106,7 +105,7 @@ def chevron(dr, cy, span, color, width):
     dr.line([(cx - hw, cy + 26), (cx, cy - 26)], fill=color, width=width)
     dr.line([(cx, cy - 26), (cx + hw, cy + 26)], fill=color, width=width)
 
-for cy, span in [(560, 214), (704, 232), (848, 250)]:
+for cy, span in [(140, 214), (262, 232), (384, 250)]:
     chevron(gd, cy, span, CYAN + (245,), 17)
     chevron(gd, cy - 38, span - 30, ICE + (130,), 9)   # echo line above
 
@@ -122,7 +121,6 @@ design.alpha_composite(glow)
 
 # ---------- to final: upscale to 1024x1024, flip vertically ----------
 final = design.resize((1024, 1024), Image.LANCZOS)
-final = ImageOps.flip(final)
 out = '/home/user/mod/extracted/vehicles/dashplate_mathkuro/skins/dashplate_body_flat_dash_mark_500kmh_cyberglass_b.color.png'
 final.save(out, 'PNG', optimize=True)
 print('saved', out)

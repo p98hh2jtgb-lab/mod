@@ -1,4 +1,4 @@
-# 🚀 Pad 500 km/h — Cyber-Glass **V8 XXL** (6×18m + animacion 3× ma i shpejtë)
+# 🚀 Pad 500 km/h — Cyber-Glass **V9 SMOOTH** (6×18m, lëshim i butë + shigjeta të shtruta)
 
 Bir, ja V7 😄 — tani pad-i i 500km/h është bërë **pistë e vërtet**:
 
@@ -22,9 +22,15 @@ Bir, ja V7 😄 — tani pad-i i 500km/h është bërë **pistë e vërtet**:
 - Vija e energjisë rrjedh **3× ma shpejt** (`scrollSpeed` → **1.5**) + **2× ma shumë vija** (V-tiling) — plot energji!
 - Emri i config-it në selector tani thotë **"Boost (500km/h, 310mph) XL"** — kështu e di që V8 po të ngarkohet
 
+## V9: Lëshimi i butë (smooth catapult) + shigjetat e rregulluara
+- Kur shkel makinë, **nuk e gjuan menjëherë** — e ngadalë me **1.6s catapult të butë** (0→500 km/h me ease-out, si katapultë aeroplanmbajtëse 🛩️)
+- E rregullueshme: **Tuning → Launch Smoothness** (0.05s = snap i vjetër, deri 3s = super butë) — vlen për të gjitha Boost pads
+- **Shigjetat tani janë kah ecën makina** (u kthyera saktë — u krahasua me skin-in tënd V5 që të pëlqente)
+- **Flow animacioni rrjedh drejt shigjetave** (drejtimi i saktë)
+
 ## Instalimi
 1. Hiq V6 nga `Documents/BeamNG.drive/mods/`
-2. Vendos `dashplate_mathkuro_500KMH_CYBER_GLASS_V8_XXL.zip`
+2. Vendos `dashplate_mathkuro_500KMH_CYBER_GLASS_V9_SMOOTH.zip`
 3. Spawn **Boost (500km/h, 310mph)** — gjithçka e re del vetë (është në config default)
 
 ## Rregullime të shpejta
