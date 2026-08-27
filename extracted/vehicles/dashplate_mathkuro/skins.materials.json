@@ -159,58 +159,5 @@
     "doubleSided": true,
     "invertBackFaceNormals": true,
     "version": 1.5
-  },
-  "dashplate_flat_jump_design": {
-    "name": "dashplate_flat_jump_design",
-    "mapTo": "dashplate_flat_jump_design",
-    "class": "Material",
-    "Stages": [
-      {
-        "baseColorMap": "/vehicles/dashplate_mathkuro/skins/dashplate_jump_design_b.color.png",
-        "clearCoatFactor": 0.22,
-        "clearCoatRoughnessFactor": 0.25,
-        "emissiveFactor": [
-          0.35,
-          0.1,
-          0.3
-        ],
-        "instanceDiffuse": null,
-        "instanceOpacity": true,
-        "metallicFactor": 0.15,
-        "opacityMapUseUV": 1
-      },
-      {
-        "clearCoatFactor": null,
-        "clearCoatRoughnessFactor": null,
-        "emissiveFactor": null,
-        "instanceDiffuse": null,
-        "instanceOpacity": null,
-        "metallicFactor": null,
-        "opacityMapUseUV": null
-      },
-      {
-        "clearCoatFactor": null,
-        "clearCoatRoughnessFactor": null,
-        "emissiveFactor": null,
-        "instanceDiffuse": null,
-        "instanceOpacity": null,
-        "metallicFactor": null,
-        "opacityMapUseUV": null
-      },
-      {
-        "clearCoatFactor": null,
-        "clearCoatRoughnessFactor": null,
-        "emissiveFactor": null,
-        "instanceDiffuse": null,
-        "instanceOpacity": null,
-        "metallicFactor": null,
-        "opacityMapUseUV": null
-      }
-    ],
-    "activeLayers": 1,
-    "castShadows": false,
-    "doubleSided": true,
-    "invertBackFaceNormals": true,
-    "version": 1.5
   }
 }
