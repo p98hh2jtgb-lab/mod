@@ -1,0 +1,80 @@
+{
+  "dashplate_flat_body_main.skin.dynamicTextures": {
+    "name": "dashplate_flat_body_main.skin.dynamicTextures",
+    "mapTo": "dashplate_flat_body_main.skin.dynamicTextures",
+    "class": "Material",
+    "Stages": [
+      {
+        "clearCoatFactor": 0.414999992,
+        "clearCoatRoughnessFactor": 0.314999998,
+        "colorPaletteMap": "/vehicles/dashplate_mathkuro/dashplate_body_color_palette.color.png",
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "instanceDiffuse": true,
+        "instanceOpacity": true,
+        "metallicFactor": null,
+        "metallicMapUseUV": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": 1,
+        "diffuseMapUseUV": 1,
+        "emissiveFactor": null,
+        "instanceDiffuse": true,
+        "instanceOpacity": true,
+        "metallicFactor": 1,
+        "metallicMapUseUV": 1,
+        "opacityMapUseUV": 1,
+        "roughnessMapUseUV": 1
+      },
+      {
+        "baseColorMap": "@DynamicTextureBaseColor",
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMap": "@DynamicTextureColorPalette",
+        "colorPaletteMapUseUV": 1,
+        "diffuseMapUseUV": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": true,
+        "instanceOpacity": true,
+        "metallicFactor": 1,
+        "metallicMap": "@DynamicTextureMetallic",
+        "metallicMapUseUV": null,
+        "normalMap": "/vehicles/dashplate_mathkuro/dashplate_body_nm.normal.png",
+        "opacityMap": "/vehicles/dashplate_mathkuro/skins/dashplate_body_skin_o.data.png",
+        "opacityMapUseUV": null,
+        "roughnessMap": "@DynamicTextureRoughness",
+        "roughnessMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "colorPaletteMapUseUV": null,
+        "diffuseMapUseUV": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "metallicMapUseUV": null,
+        "opacityMapUseUV": null,
+        "roughnessMapUseUV": null
+      }
+    ],
+    "activeLayers": 3,
+    "castShadows": false,
+    "doubleSided": true,
+    "dynamicCubemap": true,
+    "invertBackFaceNormals": true,
+    "materialTag0": "beamng",
+    "materialTag1": "vehicle",
+    "version": 1.5
+  }
+}

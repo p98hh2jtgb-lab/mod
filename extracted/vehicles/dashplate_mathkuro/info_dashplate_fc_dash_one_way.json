@@ -1,0 +1,7 @@
+{
+  "Configuration":"One Way",
+  "Description":"Make the vehicle move in only one direction.",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Blue"
+}

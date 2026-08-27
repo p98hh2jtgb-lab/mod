@@ -1,0 +1,19 @@
+{
+  "dashplate": {
+    "information": {
+      "authors": "mathkuro (based on official Kick Plate)",
+      "name": "Dash Plate"
+    },
+    "slotType": "main",
+    "slots": [
+      ["type", "default", "description"],
+      ["dashplate_body","", "Body"],
+      ["dashplate_meshes","", "Mesh"],
+      ["paint_design","", "Skin"],
+      ["dashplate_function","", "Gimmick"],
+    ],
+    "general": {
+      "enableTracking": false
+    }
+  }
+}

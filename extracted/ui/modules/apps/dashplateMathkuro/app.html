@@ -1,0 +1,9 @@
+<div class="dashplateMathkuro">
+  <link type="text/css" rel="stylesheet" href="/ui/modules/apps/dashplateMathkuro/app.css" />
+  <div ng-controller="AppCtrl" ng-cloak>
+    <!-- 関数イメージ表示部分 -->
+    <div class="imageContainer" ng-if="settings.uiEnabled && currentImagePath">
+      <img class="functionImage" ng-src="{{currentImagePath}}" alt="{{currentFunctionName}}" />
+    </div>
+  </div>
+</div>

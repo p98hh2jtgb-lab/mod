@@ -1,0 +1,106 @@
+{
+  "dashplate_flat_body_main": {
+    "name": "dashplate_flat_body_main",
+    "mapTo": "dashplate_flat_body_main",
+    "class": "Material",
+    "Stages": [
+      {
+        "clearCoatFactor": 0.414999992,
+        "clearCoatRoughnessFactor": 0.314999998,
+        "colorPaletteMap": "/vehicles/dashplate_mathkuro/dashplate_body_color_palette.color.png",
+        "emissiveFactor": [
+          1,
+          1,
+          1
+        ],
+        "instanceDiffuse": true,
+        "instanceOpacity": true,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": true,
+        "instanceOpacity": null,
+        "metallicFactor": 1,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": true,
+        "instanceOpacity": null,
+        "metallicFactor": 1,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      }
+    ],
+    "activeLayers": 3,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "dashplate_flat_500kmh_cyberglass_flow": {
+    "name": "dashplate_flat_500kmh_cyberglass_flow",
+    "mapTo": "dashplate_flat_500kmh_cyberglass_flow",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "/vehicles/dashplate_mathkuro/skins/dashplate_flat_500kmh_cyberglass_flow_b.color.png",
+        "animFlags": 1,
+        "scrollDir": [0, 1],
+        "scrollSpeed": 0.5,
+        "glow": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1
+  },
+  "dashplate_slope_body_main": {
+    "name": "dashplate_slope_body_main",
+    "mapTo": "dashplate_slope_body_main",
+    "class": "Material",
+    "Stages": [
+      {
+        "colorPaletteMap": "/vehicles/dashplate_mathkuro/dashplate_body_slope_color_palette.color.png",
+        "diffuseColor": null
+      },
+      {
+        "colorMap": "/vehicles/dashplate_mathkuro/dashplate_body_slope_main_b.color.png",
+        "diffuseColor": [
+          1,
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "diffuseColor": null
+      },
+      {
+        "diffuseColor": null
+      }
+    ],
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true
+  }
+}

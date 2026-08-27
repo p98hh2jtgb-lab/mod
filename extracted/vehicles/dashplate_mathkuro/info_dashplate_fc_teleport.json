@@ -1,0 +1,7 @@
+{
+  "Configuration":"Teleport",
+  "Description":"Teleports the vehicle to a matching gate or a random spawn point.",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Purple"
+}

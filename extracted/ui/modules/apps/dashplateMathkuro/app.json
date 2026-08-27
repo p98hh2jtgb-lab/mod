@@ -1,0 +1,15 @@
+{
+  "name": "Gimmick Pad - Random Function Display",
+  "author": "mathkuro",
+  "version": "0.1.0",
+  "description": "Display executed random function images",
+  "directive": "dashplateMathkuro",
+  "domElement": "<dashplate-mathkuro></dashplate-mathkuro>",
+  "css": {
+    "width": "20%",
+    "height": "20%",
+    "top": "0%",
+    "left": "40%"
+  },
+  "preserveAspectRatio": false
+}

@@ -1,0 +1,7 @@
+{
+  "Configuration":"Flat",
+  "Description":"A simple dash plate. Good for accelarating any type of object. This is a deprecated config that remains for backward compatibility.",
+  "Value":100000,
+  "Weight":2000,
+  "isAuxiliary":true
+}

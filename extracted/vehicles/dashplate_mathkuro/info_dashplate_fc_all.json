@@ -1,0 +1,8 @@
+{
+  "Configuration":"(Debug) All Functions",
+  "Description":"Enables all functions on a vehicle for testing purposes.",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Orange",
+  "isAuxiliary":true
+}

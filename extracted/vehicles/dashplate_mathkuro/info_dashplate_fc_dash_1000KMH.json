@@ -1,0 +1,7 @@
+{
+  "Configuration":"Boost (999km/h, 620mph)",
+  "Description":"Boost the speed of a vehicle to 999km/h (620mph).",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Red"
+}

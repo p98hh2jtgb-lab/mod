@@ -1,0 +1,7 @@
+{
+  "Configuration":"Sling Shot",
+  "Description":"Pulls the vehicle back then launches it forward at high speed.",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Brawn"
+}

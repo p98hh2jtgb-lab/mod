@@ -1,0 +1,7 @@
+{
+  "Configuration":"Extinguish",
+  "Description":"Extinguishes the vehicle fire.",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Gray"
+}

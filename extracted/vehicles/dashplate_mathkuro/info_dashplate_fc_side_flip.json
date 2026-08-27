@@ -1,0 +1,7 @@
+{
+  "Configuration":"Flip(Side)",
+  "Description":"Applies a rolling torque to flip the vehicle sideways.",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Pink"
+}

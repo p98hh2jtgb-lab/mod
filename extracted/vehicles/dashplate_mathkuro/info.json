@@ -1,0 +1,85 @@
+{
+  "Name": "Gimmick Pad (Formerly Dash Plate)",
+  "Author": "mathkuro (based on official Kick Plate)",
+  "Type": "Prop",
+  "default_pc": "dashplate_fc_dash_500KMH",
+  "paints": {
+    "Black": {
+      "baseColor": [0, 0, 0, 1],
+      "clearcoat": 0.8,
+      "clearcoatRoughness": 0,
+      "metallic": 0.2,
+      "roughness": 0.5
+    },
+    "Red": {
+      "baseColor":[0.81,0,0,1],
+      "metallic":0.2,
+      "roughness":0.5,
+      "clearcoat":0.8,
+      "clearcoatRoughness":0
+    },
+    "Orange": {
+      "baseColor":[1,0.21,0,1.004],
+      "metallic":0.2,
+      "roughness":0.5,
+      "clearcoat":0.8,
+      "clearcoatRoughness":0
+    },
+    "Yellow": {
+      "baseColor":[0.908,0.8,0,1.004],
+      "metallic":0.2,
+      "roughness":0.5,
+      "clearcoat":0.8,
+      "clearcoatRoughness":0
+    },
+    "Green": {
+      "baseColor":[0.001,0.814,0,1.004],
+      "metallic":0.2,
+      "roughness":0.5,
+      "clearcoat":0.8,
+      "clearcoatRoughness":0
+    },
+    "Light Blue": {
+      "baseColor":[0,0.804,0.814,1.004],
+      "metallic":0.2,
+      "roughness":0.5,
+      "clearcoat":0.8,
+      "clearcoatRoughness":0
+    },
+    "Blue": {
+      "baseColor":[0.045,0.008,1,1.004],
+      "metallic":0.2,
+      "roughness":0.5,
+      "clearcoat":0.8,
+      "clearcoatRoughness":0
+    },
+    "Purple": {
+        "baseColor":[0.45,0.008,1,1.004],
+        "metallic":0.2,
+        "roughness":0.5,
+        "clearcoat":0.8,
+        "clearcoatRoughness":0
+    },
+    "Pink": {
+        "baseColor":[1,0.008,0.972,1.004],
+        "metallic":0.2,
+        "roughness":0.5,
+        "clearcoat":0.8,
+        "clearcoatRoughness":0
+    },
+    "Gray": {
+        "baseColor":[0.5,0.5,0.5,1],
+        "metallic":0.2,
+        "roughness":0.5,
+        "clearcoat":0.8,
+        "clearcoatRoughness":0
+    },
+    "Brawn": {
+        "baseColor":[0.278,0.147,0.057,1.004],
+        "metallic":0.2,
+        "roughness":0.5,
+        "clearcoat":0.8,
+        "clearcoatRoughness":0
+    }
+  }
+}

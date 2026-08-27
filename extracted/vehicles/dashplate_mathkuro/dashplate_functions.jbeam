@@ -1,0 +1,651 @@
+{
+    "dashplate_function_all": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "All"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$activationLevel", "range", "Lv", "Functionality", 2, 0, 100, "Activation Level", "Higher values increase the frequency of effects"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"all", "dashplateActivationLevel":"$activationLevel"}]
+        ]
+    },
+    "dashplate_function_random": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Random"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "subCategory", "default", "min", "max", "title", "description"],
+            ["$flipChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Flip Chance(Side)", "Higher values increase the chance of flip effects"],
+            ["$lightsOnChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Toggle Lights Chance", "Higher values increase the chance of lights on effects"],
+            ["$repairChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Repair Chance", "Higher values increase the chance of repair effects"],
+            ["$slingshotChance", "range", "%", "Chance Rate", "", 0, 0, 100, "Sling Shot Chance", "Higher values increase the chance of slingshot effects"],
+            ["$breakHingesChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Break Hinges", "Higher values increase the chance of breaking hinges"],
+            ["$breakRandomChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Break Random Break Groups Chance", "Higher values increase the chance of breaking random break groups"],
+            ["$dashChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Dash Chance", "Higher values increase the chance of speed boost effects"],
+            ["$dashJumpChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Dash(Jump) Chance", "Higher values increase the chance of jump effects"],
+            ["$dashOneWayChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Dash(One Way) Chance", "Higher values increase the chance of one way effects"],
+            ["$dashReverseChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Reverse Chance", "Higher values increase the chance of reverse effects"],
+            ["$dashStopChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Stop Chance", "Higher values increase the chance of stop effects"],
+            ["$dashTurnLeftChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Dash(Turn Left) Chance", "Higher values increase the chance of turn left effects"],
+            ["$dashTurnRightChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Dash(Turn Right) Chance", "Higher values increase the chance of turn right effects"],
+            ["$deflateTiresChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Deflate Tires Chance", "Higher values increase the chance of deflating tires"],
+            ["$explodeChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Explode Chance", "Higher values increase the chance of explosion effects"],
+            ["$igniteChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Ignite Chance", "Higher values increase the chance of ignition effects"],
+            ["$openChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Open Chance", "Higher values increase the chance of opening latches effects"],
+            ["$paintChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Random Paint Chance", "Higher values increase the chance of changing vehicle color"],
+            ["$tornadoChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Tornado Chance", "Higher values increase the chance of tornado effects"],
+            ["$spinChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Spin Out Chance", "Higher values increase the chance of spin out effects."],
+            ["$frontFlipChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Flip Chance(Front)", "Higher values increase the chance of front flip effects"],
+            ["$teleportChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Teleport Chance", "Higher values increase the chance of teleport effects"],
+            ["$scaleSpeedChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Double Speed Chance", "Higher values increase the chance of double speed effects"],
+            ["$extinguishChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Extinguish Chance", "Higher values increase the chance of extinguish effects"],
+
+            ["$breakFrequencyLevel", "range", "Lv", "Functionality", "Break Random Parts", 5, 0, 100, "Break Frequency Level", "Higher values increase the frequency of break effects"],
+            ["$dashSpeedKMH", "range", "km/h", "Functionality", "Dash", 200, 0, 10000, "Speed", "Acceleration speed"],
+            ["$dashJumpSpeedKMH", "range", "km/h", "Functionality", "Dash(Jump)", 200, 0, 10000, "Speed", "Acceleration speed for jump dash effect"],
+            ["$dashJumpVerticalAngleDegree", "range", "°", "Functionality", "Dash(Jump)", 45, -90, 90, "Vertical Angle", "Vertical angle of the speed boost: 0 for horizontal, 1~89 values for upward angle, 90 for just vertical angle"],
+            ["$dashOneWaySpeedKMH", "range", "km/h", "Functionality", "Dash(One Way)", 200, 0, 10000, "Speed", "Acceleration speed for one way dash effect"],
+            ["$dashReverseSpeedKMH", "range", "km/h", "Functionality", "Dash(Reverse)", 200, 0, 10000, "Speed", "Acceleration speed for reverse dash effect"],
+            ["$dashTurnLeftSpeedKMH", "range", "km/h", "Functionality", "Dash(Turn Left)", 200, 0, 10000, "Speed", "Acceleration speed for turn left dash effect"],
+            ["$dashTurnRightSpeedKMH", "range", "km/h", "Functionality", "Dash(Turn Right)", 200, 0, 10000, "Speed", "Acceleration speed for turn right dash effect"],
+            ["$changeColorFrequency", "range", "%", "Functionality", "Random Paint", 10, 0, 100, "Change Color Frequency", ""],
+            ["$flipPowerPercent", "range", "%", "Functionality", "Flip", 20, -100, 100, "Flip Power", "Power of the flip: positive for right flip, negative for left flip"],
+            ["$frontFlipPowerPercent", "range", "%", "Functionality", "Front Flip", 20, -100, 100, "Flip Power", "Power of the flip: positive for forward flip, negative for backward flip"],
+            ["$repairIntervalSec", "range", "s", "Functionality", "Repair", 5, 1, 60, "Repair Interval", "Interval in seconds between each repair"],
+            ["$slingshotSpeedKMH", "range", "km/h", "Functionality", "Sling Shot", 300, 0, 10000, "Speed", "Boost speed after slingshot pull-back"],
+            ["$slingshotChargeSec", "range", "s", "Functionality", "Sling Shot", 5, 1, 60, "Charge Time", "Duration in seconds to apply the pull-back before launching"],
+            ["$spinPowerPercent", "range", "%", "Functionality", "Spin Out", 50, -100, 100, "Spin Power", "Power of the spin out: positive for right spin, negative for left spin"],
+            ["$tornadoSpinPowerPercent", "range", "%", "Functionality", "Tornado", 50, -100, 100, "Spin Power", "Power of the spin out: positive for right spin, negative for left spin"],
+            ["$tornadoUpperSpeedKMH", "range", "km/h", "Functionality", "Tornado", 200, 0, 1000, "Upper Speed", "Speed of the upward force: higher values increase the upward force"],
+            ["$fireworksSpeedKMH", "range", "km/h", "Functionality", "Fireworks", 80, 0, 1000, "Launch Speed", "Speed of the upward launch"],
+            ["$fireworksDelaySec", "range", "s", "Functionality", "Fireworks", 1.5, 0, 10, "Explosion Delay", "Time in seconds before the vehicle explodes after launch"],
+            ["$scaleSpeedMultiplier", "range", "x", "Functionality", "Scale Speed", 2, 0.1, 10, "Speed Multiplier", "Multiplier applied to the current vehicle speed: 2 to double, 0.5 to halve"],
+            ["$fireworksChance", "range", "%", "Chance Rate", "", 10, 0, 100, "Fireworks Chance", "Higher values increase the chance of fireworks effects"],
+            ["$teleportGateNumber", "range", "#", "Functionality", "Teleport", 0, 0, 100, "Gate Number", "0: teleport to a random spawn point. 1-100: teleport to the matching gate number"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction",
+                {"dashplateFunctionName":"random",
+
+                 "dashplateRandomFlip": {
+                    "chance": "$flipChance",
+                    "dashplateFlipPowerPercent": "$flipPowerPercent"
+                 },
+                 "dashplateRandomFrontFlip": {
+                    "chance": "$frontFlipChance",
+                    "dashplateFrontFlipPowerPercent": "$frontFlipPowerPercent"
+                 },
+                 "dashplateRandomToggleLights": {
+                    "chance": "$lightsOnChance"
+                 },
+                 "dashplateRandomRepair": {
+                    "chance": "$repairChance",
+                    "dashplateRepairIntervalSec": "$repairIntervalSec"
+                 },
+                 "dashplateRandomSlingshot": {
+                    "chance": "$slingshotChance",
+                    "dashplateSpeedKMH": "$slingshotSpeedKMH",
+                    "dashplateSlingshotChargeSec": "$slingshotChargeSec",
+                    "dashplateHorizontalDirectionDegree": 0,
+                    "dashplateVerticalAngleDegree": 0,
+                    "dashplateUseDashplateDirection": true
+                 },
+                 "dashplateRandomBreakHinges": {
+                    "chance": "$breakHingesChance"
+                 },
+                "dashplateRandomBreakRandom": {
+                    "chance": "$breakRandomChance",
+                    "dashplateBreakFrequencyLevel": "$breakFrequencyLevel"
+                },
+                 "dashplateRandomDash": {
+                    "chance": "$dashChance",
+                    "dashplateSpeedKMH": "$dashSpeedKMH",
+                    "dashplateHorizontalDirectionDegree": 0,
+                    "dashplateVerticalAngleDegree": 0,
+                    "dashplateUseDashplateDirection": false
+                },
+                 "dashplateRandomDashJump": {
+                    "chance": "$dashJumpChance",
+                    "dashplateSpeedKMH": "$dashJumpSpeedKMH",
+                    "dashplateHorizontalDirectionDegree": 0,
+                    "dashplateVerticalAngleDegree": "$dashJumpVerticalAngleDegree",
+                    "dashplateUseDashplateDirection": false
+                },
+                "dashplateRandomDashOneWay": {
+                    "chance": "$dashOneWayChance",
+                    "dashplateSpeedKMH": "$dashOneWaySpeedKMH",
+                    "dashplateHorizontalDirectionDegree": 0,
+                    "dashplateVerticalAngleDegree": 0,
+                    "dashplateUseDashplateDirection": true
+                 },
+                 "dashplateRandomDashReverse": {
+                    "chance": "$dashReverseChance",
+                    "dashplateSpeedKMH": "$dashReverseSpeedKMH",
+                    "dashplateHorizontalDirectionDegree": 180,
+                    "dashplateVerticalAngleDegree": 0,
+                    "dashplateUseDashplateDirection": false
+                 },
+                 "dashplateRandomDashStop": {
+                    "chance": "$dashStopChance",
+                    "dashplateSpeedKMH": 0,
+                    "dashplateHorizontalDirectionDegree": 0,
+                    "dashplateVerticalAngleDegree": 0,
+                    "dashplateUseDashplateDirection": false
+                 },
+                "dashplateRandomDashTurnLeft": {
+                    "chance": "$dashTurnLeftChance",
+                    "dashplateSpeedKMH": "$dashTurnLeftSpeedKMH",
+                    "dashplateHorizontalDirectionDegree": -90,
+                    "dashplateVerticalAngleDegree": 0,
+                    "dashplateUseDashplateDirection": true
+                 },
+                "dashplateRandomDashTurnRight": {
+                    "chance": "$dashTurnRightChance",
+                    "dashplateSpeedKMH": "$dashTurnRightSpeedKMH",
+                    "dashplateHorizontalDirectionDegree": 90,
+                    "dashplateVerticalAngleDegree": 0,
+                    "dashplateUseDashplateDirection": true
+                 },
+                 "dashplateRandomDeflateTires": {
+                    "chance": "$deflateTiresChance"
+                 },
+                 "dashplateRandomExplode": {
+                    "chance": "$explodeChance"
+                 },
+                 "dashplateRandomIgnite": {
+                    "chance": "$igniteChance"
+                 },
+                 "dashplateRandomOpen": {
+                    "chance": "$openChance"
+                 },
+                 "dashplateRandomPaint": {
+                    "chance": "$paintChance",
+                    "dashplateChangeColorFrequency": "$changeColorFrequency"
+                 },
+                 "dashplateRandomSpin": {
+                    "chance": "$spinChance",
+                    "dashplateSpinPowerPercent": "$spinPowerPercent"
+                },
+                 "dashplateRandomTornado": {
+                    "chance": "$tornadoChance",
+                    "dashplateSpinPowerPercent": "$tornadoSpinPowerPercent",
+                    "dashplateUpperSpeedKMH": "$tornadoUpperSpeedKMH"
+                 },
+                 "dashplateRandomFireworks": {
+                    "chance": "$fireworksChance",
+                    "dashplateFireworksSpeedKMH": "$fireworksSpeedKMH",
+                    "dashplateFireworksDelaySec": "$fireworksDelaySec"
+                 },
+                 "dashplateRandomTeleport": {
+                    "chance": "$teleportChance",
+                    "dashplateTeleportGateNumber": "$teleportGateNumber"
+                 },
+                 "dashplateRandomScaleSpeed": {
+                    "chance": "$scaleSpeedChance",
+                    "dashplateSpeedMultiplier": "$scaleSpeedMultiplier"
+                 },
+                 "dashplateRandomExtinguish": {
+                    "chance": "$extinguishChance"
+                 }
+                }
+            ]
+        ]
+    },
+
+    "dashplate_function_horn": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Horn"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"horn"}]
+        ]
+    },
+    "dashplate_function_toggle_lights": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Toggle Lights"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"toggleLights"}]
+        ]
+    },
+    "dashplate_function_repair": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Repair"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$repairIntervalSec", "range", "s", "Functionality", 5, 1, 60, "Repair Interval", "Interval in seconds between each repair"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"repair", "dashplateRepairIntervalSec":"$repairIntervalSec"}]
+        ]
+    },
+    "dashplate_function_engine_stall": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Engine Stall"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"engineStall"}]
+        ]
+    },
+    "dashplate_function_flip": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Flip"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$flipPowerPercent", "range", "%", "Functionality", 20, -100, 100, "Flip Power", "Power of the flip: positive for right flip, negative for left flip(note: flip power is different from each vehicle's node position)"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"flip", "dashplateFlipPowerPercent":"$flipPowerPercent"}]
+        ]
+    },
+    "dashplate_function_front_flip": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Front Flip"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$frontFlipPowerPercent", "range", "%", "Functionality", 20, -100, 100, "Flip Power", "Power of the flip: positive for backward flip, negative for forward flip(note: flip power is different from each vehicle's node position)"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"frontFlip", "dashplateFrontFlipPowerPercent":"$frontFlipPowerPercent"}]
+        ]
+    },
+    "dashplate_function_sling_shot": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Sling Shot"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$slingshotSpeedKMH", "range", "km/h", "Functionality", 300, 0, 10000, "Boost Speed", "Boost speed after slingshot pull-back"],
+            ["$slingshotChargeSec", "range", "s", "Functionality", 3, 1, 60, "Charge Time", "Duration in seconds to apply the pull-back before launching"],
+            ["$horizontalDirectionDegree", "range", "°", "Functionality", 0, -180, 180, "Horizontal Direction", "Direction of the boost: 0 for forward, 90 for right, -90 for left, 180 for backward"],
+            ["$verticalAngleDegree", "range", "°", "Functionality", 0, 0, 90, "Vertical Angle", "Vertical angle of the boost: 0 for horizontal, 90 for just vertical angle"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"slingshot", "dashplateSpeedKMH":"$slingshotSpeedKMH", "dashplateSlingshotChargeSec":"$slingshotChargeSec", "dashplateHorizontalDirectionDegree":"$horizontalDirectionDegree", "dashplateVerticalAngleDegree":"$verticalAngleDegree", "dashplateUseDashplateDirection":true}]
+        ]
+    },
+    "dashplate_function_break_hinges": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Break Hinges"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"breakHinges"}]
+        ]
+    },
+    "dashplate_function_break_random": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Break Random Break Groups"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$breakFrequencyLevel", "range", "Lv", "Functionality", 5, 0, 100, "Break Frequency Level", "Higher values increase the frequency of break effects"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"breakRandomBreakGroups", "dashplateBreakFrequencyLevel":"$breakFrequencyLevel"}]
+        ]
+    },
+    "dashplate_function_dash": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Speed Boost"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$dashSpeedKMH", "range", "km/h", "Functionality", 100, 0, 10000, "Speed", "Acceleration speed"],
+            ["$horizontalDirectionDegree", "range", "°", "Functionality", 0, -180, 180, "Horizontal Direction", "Direction of the speed boost: 0 for forward, 90 for right, -90 for left, 180 for backward"],
+            ["$verticalAngleDegree", "range", "°", "Functionality", 0, 0, 90, "Vertical Angle", "Vertical angle of the speed boost: 0 for horizontal, 1~89 values for upward angle, 90 for just vertical angle"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"dash", "dashplateSpeedKMH":"$dashSpeedKMH", "dashplateHorizontalDirectionDegree":"$horizontalDirectionDegree", "dashplateVerticalAngleDegree":"$verticalAngleDegree", "dashplateUseDashplateDirection":false}]
+        ]
+    },
+    "dashplate_function_dash_to_dashplate_direction": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Speed Boost(Pad Direction)"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$dashSpeedKMH", "range", "km/h", "Functionality", 100, 0, 10000, "Speed", "Acceleration speed"],
+            ["$horizontalDirectionDegree", "range", "°", "Functionality", 0, -180, 180, "Horizontal Direction", "Direction of the speed boost: 0 for forward, 90 for right, -90 for left, 180 for backward"],
+            ["$verticalAngleDegree", "range", "°", "Functionality", 0, 0, 90, "Vertical Angle", "Vertical angle of the speed boost: 0 for horizontal, 1~89 values for upward angle, 90 for just vertical angle"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"dash", "dashplateSpeedKMH":"$dashSpeedKMH", "dashplateHorizontalDirectionDegree":"$horizontalDirectionDegree", "dashplateVerticalAngleDegree":"$verticalAngleDegree", "dashplateUseDashplateDirection":true}]
+        ]
+    },
+    "dashplate_function_deflate_tires": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Deflate Tires"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"deflateTires"}]
+        ]
+    },
+    "dashplate_function_explode": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Explode"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"explode"}]
+        ]
+    },
+    "dashplate_function_ignite": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Ignite"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"ignite"}]
+        ]
+    },
+    "dashplate_function_open": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Open"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"openLatches"}]
+        ]
+    },
+    "dashplate_function_paint": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Paint"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$changeColorFrequency", "range", "%", "Functionality", 10, 0, 100, "Change Color Frequency", "How often the vehicle color changes: higher values increase the frequency"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"paintRandomColor", "dashplateChangeColorFrequency":"$changeColorFrequency"}]
+        ]
+    },
+    "dashplate_function_spin": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Spin Out"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$spinPowerPercent", "range", "%", "Functionality", 50, -100, 100, "Spin Power", "Power of the spin out: positive for right spin, negative for left spin"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"spin", "dashplateSpinPowerPercent":"$spinPowerPercent"}]
+        ]
+    },
+    "dashplate_function_tornado": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Tornado"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$spinPowerPercent", "range", "%", "Functionality", 50, -100, 100, "Spin Power", "Power of the spin out: positive for right spin, negative for left spin"],
+            ["$upperSpeedKMH", "range", "km/h", "Functionality", 200, 0, 1000, "Upper Speed", "Speed of the upward force: higher values increase the upward force"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"tornado", "dashplateSpinPowerPercent":"$spinPowerPercent", "dashplateUpperSpeedKMH":"$upperSpeedKMH"}]
+        ]
+    },
+    "dashplate_function_teleport": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Teleport"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$teleportGateNumber", "range", "#", "Functionality", 0, 0, 100, "Gate Number", "0: teleport to a random spawn point. 1-100: teleport to the matching gate number. If no matching gate exists, falls back to a random spawn point"],
+            ["$teleportGateRole", "range", "", "Functionality", 0, 0, 2, "Gate Role", "0: entrance and exit (default), 1: entrance only (teleports but not a destination), 2: exit only (destination but does not teleport)"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"teleport", "dashplateTeleportGateNumber":"$teleportGateNumber", "dashplateTeleportGateRole":"$teleportGateRole"}]
+        ]
+    },
+    "dashplate_function_scale_speed": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Double Speed"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$speedMultiplier", "range", "x", "Functionality", 2, 0.1, 10, "Speed Multiplier", "Multiplier applied to the current vehicle speed: 2 to double, 0.5 to halve"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"scaleSpeed", "dashplateSpeedMultiplier":"$speedMultiplier"}]
+        ]
+    },
+    "dashplate_function_extinguish": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Extinguish"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"extinguish"}]
+        ]
+    },
+    "dashplate_function_fireworks": {
+        "information": {
+            "authors": "mathkuro",
+            "name": "Fireworks"
+        },
+        "slotType": "dashplate_function",
+        "slots": [
+            ["type", "default", "description"]
+        ],
+        "variables": [
+            ["name", "type", "unit", "category", "default", "min", "max", "title", "description"],
+            ["$fireworksSpeedKMH", "range", "km/h", "Functionality", 80, 0, 1000, "Launch Speed", "Speed of the upward launch"],
+            ["$fireworksDelaySec", "range", "s", "Functionality", 1.5, 0, 10, "Explosion Delay", "Time in seconds before the vehicle explodes after launch"]
+        ],
+        "flexbodies": [
+            ["mesh", "[group]:", "nonFlexMaterials"]
+        ],
+        "controller": [
+            ["fileName"],
+            ["executeFunction", {"dashplateFunctionName":"fireworks", "dashplateFireworksSpeedKMH":"$fireworksSpeedKMH", "dashplateFireworksDelaySec":"$fireworksDelaySec"}]
+        ]
+    }
+}

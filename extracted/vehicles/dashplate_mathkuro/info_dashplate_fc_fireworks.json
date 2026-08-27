@@ -1,0 +1,7 @@
+{
+  "Configuration":"Fireworks",
+  "Description":"Launches the vehicle straight up, then explodes it after a few seconds.",
+  "Value":100000,
+  "Weight":2000,
+  "defaultPaintName1":"Red"
+}
