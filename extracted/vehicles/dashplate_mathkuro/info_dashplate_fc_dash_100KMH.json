@@ -1,7 +1,7 @@
 {
-  "Configuration":"Boost (100km/h, 62mph)",
-  "Description":"Boost the speed of a vehicle to 100km/h (62mph).",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Blue"
+  "Configuration": "Boost (100km/h) \u2014 Pulse",
+  "Description": "Boost the speed of a vehicle to 100 km/h. \"Pulse\" style pad with animated FX.",
+  "Value": 100000,
+  "Weight": 2000,
+  "defaultPaintName1": "Blue"
 }

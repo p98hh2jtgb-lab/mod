@@ -1,7 +1,0 @@
-{
-  "Configuration":"Spin Out",
-  "Description":"Applies a spinning effect to a vehicle.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Yellow"
-}

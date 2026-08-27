@@ -1,7 +1,7 @@
 {
-  "Configuration":"Boost (300km/h, 186mph)",
-  "Description":"Boost the speed of a vehicle to 300km/h (186mph).",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Yellow"
+  "Configuration": "Boost (300km/h) \u2014 Afterburn",
+  "Description": "Boost the speed of a vehicle to 300 km/h. \"Afterburn\" style pad with animated FX.",
+  "Value": 100000,
+  "Weight": 2000,
+  "defaultPaintName1": "Yellow"
 }

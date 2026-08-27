@@ -1,7 +1,0 @@
-{
-  "Configuration":"Slope",
-  "Description":"A dash plate with a small slope. Can be used as a replacement for speed bumps. This is a deprecated config that remains for backward compatibility.",
-  "Value":100000,
-  "Weight":2000,
-  "isAuxiliary":true
-}

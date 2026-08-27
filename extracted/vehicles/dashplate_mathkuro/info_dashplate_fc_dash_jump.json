@@ -1,7 +1,0 @@
-{
-  "Configuration":"Jump",
-  "Description":"Make the vehicle jump into the air.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Light Blue"
-}

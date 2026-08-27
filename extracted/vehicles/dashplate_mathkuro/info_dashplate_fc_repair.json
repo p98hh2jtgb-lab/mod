@@ -1,7 +1,0 @@
-{
-  "Configuration":"Repair",
-  "Description":"Repairs the vehicle at a set interval.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Black"
-}

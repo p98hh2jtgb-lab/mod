@@ -1,7 +1,0 @@
-{
-  "Configuration":"(Invisible) Slope",
-  "Description":"A slope type dash plate without mesh. This is a deprecated config that remains for backward compatibility.",
-  "Value":100000,
-  "Weight":2000,
-  "isAuxiliary":true
-}

@@ -77,33 +77,220 @@
     "invertBackFaceNormals": true,
     "version": 1
   },
-  "dashplate_slope_body_main": {
-    "name": "dashplate_slope_body_main",
-    "mapTo": "dashplate_slope_body_main",
+  "dashplate_flat_pulse_design": {
+    "name": "dashplate_flat_pulse_design",
+    "mapTo": "dashplate_flat_pulse_design",
     "class": "Material",
     "Stages": [
       {
-        "colorPaletteMap": "/vehicles/dashplate_mathkuro/dashplate_body_slope_color_palette.color.png",
-        "diffuseColor": null
+        "baseColorMap": "/vehicles/dashplate_mathkuro/skins/dashplate_pulse_design_b.color.png",
+        "clearCoatFactor": 0.22,
+        "clearCoatRoughnessFactor": 0.25,
+        "emissiveFactor": [
+          0.0,
+          0.3,
+          0.165
+        ],
+        "instanceDiffuse": null,
+        "instanceOpacity": true,
+        "metallicFactor": 0.15,
+        "opacityMapUseUV": 1
       },
-      {
-        "colorMap": "/vehicles/dashplate_mathkuro/dashplate_body_slope_main_b.color.png",
-        "diffuseColor": [
-          1,
-          0,
-          0,
-          1
-        ]
-      },
-      {
-        "diffuseColor": null
-      },
-      {
-        "diffuseColor": null
-      }
+      {},
+      {},
+      {}
     ],
+    "activeLayers": 1,
     "castShadows": false,
     "doubleSided": true,
-    "invertBackFaceNormals": true
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "dashplate_flat_pulse_flow": {
+    "name": "dashplate_flat_pulse_flow",
+    "mapTo": "dashplate_flat_pulse_flow",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "/vehicles/dashplate_mathkuro/skins/dashplate_pulse_flow_b.color.png",
+        "animFlags": 1,
+        "scrollDir": [
+          0,
+          1
+        ],
+        "scrollSpeed": 0.35,
+        "glow": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1
+  },
+  "dashplate_flat_strike_design": {
+    "name": "dashplate_flat_strike_design",
+    "mapTo": "dashplate_flat_strike_design",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/dashplate_mathkuro/skins/dashplate_strike_design_b.color.png",
+        "clearCoatFactor": 0.22,
+        "clearCoatRoughnessFactor": 0.25,
+        "emissiveFactor": [
+          0.3,
+          0.224,
+          0.0
+        ],
+        "instanceDiffuse": null,
+        "instanceOpacity": true,
+        "metallicFactor": 0.15,
+        "opacityMapUseUV": 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "dashplate_flat_strike_flow": {
+    "name": "dashplate_flat_strike_flow",
+    "mapTo": "dashplate_flat_strike_flow",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "/vehicles/dashplate_mathkuro/skins/dashplate_strike_flow_b.color.png",
+        "animFlags": 1,
+        "scrollDir": [
+          0.25,
+          1
+        ],
+        "scrollSpeed": 0.9,
+        "glow": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1
+  },
+  "dashplate_flat_afterburn_design": {
+    "name": "dashplate_flat_afterburn_design",
+    "mapTo": "dashplate_flat_afterburn_design",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/dashplate_mathkuro/skins/dashplate_afterburn_design_b.color.png",
+        "clearCoatFactor": 0.22,
+        "clearCoatRoughnessFactor": 0.25,
+        "emissiveFactor": [
+          0.3,
+          0.082,
+          0.082
+        ],
+        "instanceDiffuse": null,
+        "instanceOpacity": true,
+        "metallicFactor": 0.15,
+        "opacityMapUseUV": 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "dashplate_flat_afterburn_flow": {
+    "name": "dashplate_flat_afterburn_flow",
+    "mapTo": "dashplate_flat_afterburn_flow",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "/vehicles/dashplate_mathkuro/skins/dashplate_afterburn_flow_b.color.png",
+        "animFlags": 1,
+        "scrollDir": [
+          1,
+          0
+        ],
+        "scrollSpeed": 1.2,
+        "glow": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1
+  },
+  "dashplate_flat_warp_design": {
+    "name": "dashplate_flat_warp_design",
+    "mapTo": "dashplate_flat_warp_design",
+    "class": "Material",
+    "Stages": [
+      {
+        "baseColorMap": "/vehicles/dashplate_mathkuro/skins/dashplate_warp_design_b.color.png",
+        "clearCoatFactor": 0.22,
+        "clearCoatRoughnessFactor": 0.25,
+        "emissiveFactor": [
+          0.206,
+          0.112,
+          0.3
+        ],
+        "instanceDiffuse": null,
+        "instanceOpacity": true,
+        "metallicFactor": 0.15,
+        "opacityMapUseUV": 1
+      },
+      {},
+      {},
+      {}
+    ],
+    "activeLayers": 1,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1.5
+  },
+  "dashplate_flat_warp_flow": {
+    "name": "dashplate_flat_warp_flow",
+    "mapTo": "dashplate_flat_warp_flow",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "/vehicles/dashplate_mathkuro/skins/dashplate_warp_flow_b.color.png",
+        "animFlags": 1,
+        "scrollDir": [
+          0,
+          -1
+        ],
+        "scrollSpeed": 2.6,
+        "glow": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1
   }
 }

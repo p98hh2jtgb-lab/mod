@@ -1,7 +1,0 @@
-{
-  "Configuration":"Reverse",
-  "Description":"Make the vehicle move in reverse.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Purple"
-}

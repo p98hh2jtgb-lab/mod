@@ -14,6 +14,6 @@
     "$horizontalDirectionDegree": 0.0,
     "$verticalAngleDegree": 0.0,
     "$dashplateTriggerRadius": 10,
-    "$dashplateDashRampSec": 1.6
+    "$dashplateDashRampSec": 0.6
   }
 }

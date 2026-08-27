@@ -1,45 +1,35 @@
-# 🚀 Pad 500 km/h — Cyber-Glass **V9 SMOOTH** (6×18m, lëshim i butë + shigjeta të shtruta)
+# 🚀 Gimmick Pad — **KMH FAMILY V10** (5 pista, 5 stile, 5 animacione)
 
-Bir, ja V7 😄 — tani pad-i i 500km/h është bërë **pistë e vërtet**:
+Bir, V10 😄 — tani modi ka **vetëm 5 pad-a: 100 / 200 / 300 / 500 / 1000 km/h**, secili me stil, madhësi e animacion të vetin!
 
-## Çfarë ndryshoi nga V6
+## 🎯 Lëshimi (rregulluar)
+- Nuk është më "shumë i butë": **500 km/h tani 0.6s** (ishte 1.6s) — hov i shpejt por jo instant
+- Secilit pad iu dha rampë sipas shpejtësisë: 100→0.45s, 200→0.5s, 300→0.55s, 500→0.6s, 1000→0.8s
+- E rregullueshme: **Tuning → Launch Smoothness**
 
-### 📏 Madhësia & forma
-- **V8 XXL: 6m anash × 18m gjatë përpara** (2× ma e madhe se V7, pistë e vërtetë!)
-- Rrezja e detektimit: **10m**
-- Mesh i ri `dashplate_flat_body_xl` — pjesa tjetër e modit mbetet e paprekur
-- **Rrezja e detektimit** u bë e rregullueshme për pad (`$dashplateTriggerRadius`, default 3m)
-  - Pad-i 500km/h e ka **6m** që ta kapë makinën në çdo pikë të pistës 9m — pa mbetur "zonë të vdekura"
-  - Edhe në Tuning menu tani e ka si slider (3–15m)!
+## 👨‍👩‍👧‍👦 Familja
 
-### 🎨 Dizajni i ri modern
-- Dizajn komplett i ri "runway cyber": **chuckrona neon** drejt përparit, **"500" segment-style** me glow,
-  **km/h**, shina anash me energy-dashes, corner brackets HUD, micro-grid, launch bar përpara e entry bar pas
-- Marginat jashtë frame-it janë transparente (look "qelq placi" si ai që të pëlqen)
-- I përshtatur formatit të ri 1:3 — asgjë s'shtrejtohet
+| Pad | Stili | Madhësia | Animacioni | Ngjyra |
+|---|---|---|---|---|
+| **100** | Pulse | 2×3m | pulse bands që ecin ngadalë | 🟢 jeshile |
+| **200** | Strike | 2.5×4.5m | rrjeka diagonale | 🟡 ambër |
+| **300** | Afterburn | 3×6m | vija anash (sideways sweep) | 🔴 e kuqe |
+| **500** | Cyber-Glass (**e paprekur**) | 6×18m | flow 1.5 drejt shigjetave | 🔵 cyan |
+| **1000** | Warp | 8×24m GIGANTE | warp streaks 2.6 (më e shpejta!) | 🟣 vjollcë |
 
-### ⚡ Animacioni
-- Vija e energjisë rrjedh **3× ma shpejt** (`scrollSpeed` → **1.5**) + **2× ma shumë vija** (V-tiling) — plot energji!
-- Emri i config-it në selector tani thotë **"Boost (500km/h, 310mph) XL"** — kështu e di që V8 po të ngarkohet
+Secili ka dizajn të vetin (chuckrona, numra, motive) + teksturë animacioni unike + madhësi unike + rreze detektimi të përshtatme.
 
-## V9: Lëshimi i butë (smooth catapult) + shigjetat e rregulluara
-- Kur shkel makinë, **nuk e gjuan menjëherë** — e ngadalë me **1.6s catapult të butë** (0→500 km/h me ease-out, si katapultë aeroplanmbajtëse 🛩️)
-- E rregullueshme: **Tuning → Launch Smoothness** (0.05s = snap i vjetër, deri 3s = super butë) — vlen për të gjitha Boost pads
-- **Shigjetat tani janë kah ecën makina** (u kthyera saktë — u krahasua me skin-in tënd V5 që të pëlqente)
-- **Flow animacioni rrjedh drejt shigjetave** (drejtimi i saktë)
+## 🧹 Fshirjet
+- 27 configs të tjera u fshinë (jump, teleport, tornado, fireworks, random, etj...)
+- skins-t e papërdorura, slope, UI app e Random — **131 files u fshinë**
+- Kodi lua i motorrit mbeti i plotë (siguria e funksionimit)
 
 ## Instalimi
-1. Hiq V6 nga `Documents/BeamNG.drive/mods/`
-2. Vendos `dashplate_mathkuro_500KMH_CYBER_GLASS_V9_SMOOTH.zip`
-3. Spawn **Boost (500km/h, 310mph)** — gjithçka e re del vetë (është në config default)
+1. Fshij V9 nga `Documents/BeamNG.drive/mods/`
+2. Vendos `dashplate_mathkuro_KMH_FAMILY_V10.zip`
+3. Spawn nga Props → Gimmick Pad: **Boost (100km/h) — Pulse**, **— Strike**, **— Afterburn**, **(500km/h) XL**, **(1000km/h) — Warp**
 
-## Rregullime të shpejta
-| Çfarë | Ku | Vlera |
-|---|---|---|
-| Shpejtësia e animacionit | `main.materials.json` → `scrollSpeed` | 0.65 (0.4 ngadalë / 1.0 furioze) |
-| Rrezja e trigger-it | në lojë: **Tuning → Trigger Radius**, ose në `.pc` → `$dashplateTriggerRadius` | 6 m |
-| Madhësia e pad-it | `dashplate_flat.jbeam` → `dashplate_flat_body_xl` nodes | X ±1.5, Y ±4.5 |
+> Emrat në selector tani kanë stilin pas tyre — ashtu e di që V10 është live. Cache clear nëse loja të mban të vjetrin!
 
-## Notë teknike
-- Vetëm config-i **500km/h** merr trupin XL — pjesët tjera (100/200/300km/h etj.) mbeten 4×4m siç ishin.
-- Nëse ndonjë version loje e injoron UV-animacionin, pad-i mbetet statik (prapë bukur) — asgjë nuk prishet.
+## Preview
+`preview_pad_family_V10.gif` — të 5 pad-at animated krahas krahas.

@@ -1,7 +1,0 @@
-{
-  "Configuration":"Open",
-  "Description":"Open a vehicle latches.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Green"
-}

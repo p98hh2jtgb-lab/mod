@@ -1,7 +1,0 @@
-{
-  "Configuration":"Tornado",
-  "Description":"Applies a spinning and upward effect to a vehicle.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Light Blue"
-}

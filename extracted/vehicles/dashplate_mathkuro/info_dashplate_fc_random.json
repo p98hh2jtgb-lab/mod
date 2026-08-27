@@ -1,7 +1,0 @@
-{
-  "Configuration":"Random",
-  "Description":"Applies a random effect to a vehicle.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Yellow"
-}

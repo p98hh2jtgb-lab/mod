@@ -1,7 +1,0 @@
-{
-  "Configuration":"Break Hinges",
-  "Description":"Break hinges on a vehicle.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Gray"
-}

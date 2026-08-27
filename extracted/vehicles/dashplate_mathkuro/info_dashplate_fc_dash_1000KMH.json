@@ -1,7 +1,7 @@
 {
-  "Configuration":"Boost (999km/h, 620mph)",
-  "Description":"Boost the speed of a vehicle to 999km/h (620mph).",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Red"
+  "Configuration": "Boost (1000km/h) \u2014 Warp",
+  "Description": "Boost the speed of a vehicle to 1000 km/h. \"Warp\" style pad with animated FX.",
+  "Value": 100000,
+  "Weight": 2000,
+  "defaultPaintName1": "Red"
 }

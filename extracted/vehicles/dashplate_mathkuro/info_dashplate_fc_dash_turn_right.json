@@ -1,7 +1,0 @@
-{
-  "Configuration":"Turn Right",
-  "Description":"Make the vehicle turn right.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Blue"
-}

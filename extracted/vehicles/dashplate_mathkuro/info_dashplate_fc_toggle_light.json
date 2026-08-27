@@ -1,8 +1,0 @@
-{
-  "Configuration":"Toggle Lights",
-  "Description":"Turns on headlights, fog lights, hazard lights, and beacon of the vehicle.",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Gray",
-  "isAuxiliary":true
-}

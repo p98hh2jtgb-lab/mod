@@ -1,8 +1,0 @@
-{
-  "model": "dashplate",
-  "format": 2,
-  "parts": {
-    "dashplate_body": "dashplate_slope_body",
-    "dashplate_meshes": ""
-  }
-}

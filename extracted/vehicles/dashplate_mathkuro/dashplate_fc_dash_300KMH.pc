@@ -1,17 +1,19 @@
 {
-  "format":2,
-  "mainPartName":"dashplate",
-  "mainPartPath":"/dashplate",
-  "model":"dashplate_mathkuro",
-  "parts":{
-    "dashplate_body":"dashplate_flat_body",
-    "dashplate_function":"dashplate_function_dash",
-    "dashplate_meshes":"dashplate_flat_mesh",
-    "paint_design":"dashplate_flat_skin_dash_mark"
+  "format": 2,
+  "mainPartName": "dashplate",
+  "mainPartPath": "/dashplate",
+  "model": "dashplate_mathkuro",
+  "parts": {
+    "dashplate_body": "dashplate_flat_body_l",
+    "dashplate_function": "dashplate_function_dash",
+    "dashplate_meshes": "dashplate_flat_mesh_300",
+    "paint_design": "dashplate_flat_skin_dash_mark"
   },
-  "vars":{
-    "$dashSpeedKMH":300,
-    "$horizontalDirectionDegree":0.0,
-    "$verticalAngleDegree":0.0
+  "vars": {
+    "$dashSpeedKMH": 300,
+    "$horizontalDirectionDegree": 0.0,
+    "$verticalAngleDegree": 0.0,
+    "$dashplateTriggerRadius": 4.5,
+    "$dashplateDashRampSec": 0.55
   }
 }
