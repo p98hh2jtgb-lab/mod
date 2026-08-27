@@ -1,7 +1,7 @@
 {
-  "Configuration":"Boost (500km/h, 310mph)",
-  "Description":"Boost the speed of a vehicle to 500km/h (310mph).",
-  "Value":100000,
-  "Weight":2000,
-  "defaultPaintName1":"Orange"
+  "Configuration": "Boost (500km/h, 310mph) XL",
+  "Description": "Boost the speed of a vehicle to 500 km/h (310 mph). Extra-long 6x18 m cyber-glass runway pad with animated energy flow.",
+  "Value": 100000,
+  "Weight": 2000,
+  "defaultPaintName1": "Orange"
 }

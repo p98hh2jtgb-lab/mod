@@ -1,11 +1,12 @@
-# 🚀 Pad 500 km/h — Cyber-Glass **V7 XL** (pad i madh + dizajn i ri + animacion ma i shpejtë)
+# 🚀 Pad 500 km/h — Cyber-Glass **V8 XXL** (6×18m + animacion 3× ma i shpejtë)
 
 Bir, ja V7 😄 — tani pad-i i 500km/h është bërë **pistë e vërtet**:
 
 ## Çfarë ndryshoi nga V6
 
 ### 📏 Madhësia & forma
-- Nga katror 4×4m → **3m anash × 9m gjatë përpara** (format pistë, 1:3)
+- **V8 XXL: 6m anash × 18m gjatë përpara** (2× ma e madhe se V7, pistë e vërtetë!)
+- Rrezja e detektimit: **10m**
 - Mesh i ri `dashplate_flat_body_xl` — pjesa tjetër e modit mbetet e paprekur
 - **Rrezja e detektimit** u bë e rregullueshme për pad (`$dashplateTriggerRadius`, default 3m)
   - Pad-i 500km/h e ka **6m** që ta kapë makinën në çdo pikë të pistës 9m — pa mbetur "zonë të vdekura"
@@ -18,11 +19,12 @@ Bir, ja V7 😄 — tani pad-i i 500km/h është bërë **pistë e vërtet**:
 - I përshtatur formatit të ri 1:3 — asgjë s'shtrejtohet
 
 ### ⚡ Animacioni
-- Vija e energjisë rrjedh **30% ma shpejt** (`scrollSpeed` 0.5 → **0.65**) — ende smooth, tani ma dinamike
+- Vija e energjisë rrjedh **3× ma shpejt** (`scrollSpeed` → **1.5**) + **2× ma shumë vija** (V-tiling) — plot energji!
+- Emri i config-it në selector tani thotë **"Boost (500km/h, 310mph) XL"** — kështu e di që V8 po të ngarkohet
 
 ## Instalimi
 1. Hiq V6 nga `Documents/BeamNG.drive/mods/`
-2. Vendos `dashplate_mathkuro_500KMH_CYBER_GLASS_V7_XL_FLOW.zip`
+2. Vendos `dashplate_mathkuro_500KMH_CYBER_GLASS_V8_XXL.zip`
 3. Spawn **Boost (500km/h, 310mph)** — gjithçka e re del vetë (është në config default)
 
 ## Rregullime të shpejta

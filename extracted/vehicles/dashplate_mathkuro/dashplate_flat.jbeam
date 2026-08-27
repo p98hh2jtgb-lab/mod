@@ -2,7 +2,7 @@
     "dashplate_flat_body_xl": {
         "information": {
             "authors": "mathkuro (based on official Kick Plate)",
-            "name": "Dash Plate Body(Flat XL 3x9m)"
+            "name": "Dash Plate Body(Flat XXL 6x18m)"
         },
         "slotType": "dashplate_body",
         "slots": [
@@ -13,8 +13,8 @@
             ["ref", "refback", "refleft", "refup", "refleftCorner", "refrightCorner"]
         ],
         "cameraExternal":{
-            "distance":16,
-            "distanceMin":6,
+            "distance":30,
+            "distanceMin":8,
             "offset":{"x":0, "y":1.5, "z":1},
             "fov":65
         },
@@ -40,15 +40,15 @@
              {"selfCollision":false},
              {"group":"dp"},
              {"nodeWeight":500},
-             ["dp_1",-1.5,-4.5, -0.1],
-             ["dp_3",-1.5, 4.5, -0.1],
-             ["dp_5", 1.5,-4.5, -0.1],
-             ["dp_7", 1.5, 4.5, -0.1],
+             ["dp_1",-3.0,-9.0, -0.1],
+             ["dp_3",-3.0, 9.0, -0.1],
+             ["dp_5", 3.0,-9.0, -0.1],
+             ["dp_7", 3.0, 9.0, -0.1],
              {"collision":false},
-             ["dp_0",-1.5,-4.5, 0.2],
-             ["dp_2",-1.5, 4.5, 0.2],
-             ["dp_4", 1.5,-4.5, 0.2],
-             ["dp_6", 1.5, 4.5, 0.2]
+             ["dp_0",-3.0,-9.0, 0.2],
+             ["dp_2",-3.0, 9.0, 0.2],
+             ["dp_4", 3.0,-9.0, 0.2],
+             ["dp_6", 3.0, 9.0, 0.2]
             ],
         "beams": [
               ["id1:", "id2:"],
