@@ -1,0 +1,19 @@
+{
+  "format": 2,
+  "mainPartName": "dashplate",
+  "mainPartPath": "/dashplate",
+  "model": "dashplate_mathkuro",
+  "parts": {
+    "dashplate_body": "dashplate_flat_body_xl",
+    "dashplate_function": "dashplate_function_dash",
+    "dashplate_meshes": "dashplate_flat_mesh_500kmh_ramp",
+    "paint_design": "dashplate_flat_skin_dash_mark_500kmh_cyberglass"
+  },
+  "vars": {
+    "$dashSpeedKMH": 500,
+    "$horizontalDirectionDegree": 0.0,
+    "$verticalAngleDegree": 0.0,
+    "$dashplateTriggerRadius": 10,
+    "$dashplateDashRampSec": 0.6
+  }
+}

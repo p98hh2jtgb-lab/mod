@@ -1,0 +1,7 @@
+{
+  "Configuration": "Boost (500km/h, 310mph) \u2014 Ramp",
+  "Description": "Boost to 500 km/h up a 12 m launch ramp (~14 deg) and FLY. Cyber-Glass look with animated energy flow.",
+  "Value": 100000,
+  "Weight": 2000,
+  "defaultPaintName1": "Orange"
+}
