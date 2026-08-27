@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><unit name="meter" meter="1"/><up_axis>Z_UP</up_axis></asset>
+  <library_effects>
+    <effect id="dashplate_flat_body_stunt-effect">
+      <profile_COMMON><technique sid="common"><lambert><diffuse><color>1 1 1 1</color></diffuse></lambert></technique></profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="dashplate_flat_body_stunt-material" name="dashplate_flat_stuntramp_surface">
+      <instance_effect url="#dashplate_flat_body_stunt-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="dashplate_flat_body_stunt-mesh" name="dashplate_flat_body_stunt">
+      <mesh>
+        <source id="dashplate_flat_body_stunt-positions">
+          <float_array id="dashplate_flat_body_stunt-positions-array" count="48">-2.25 -8 0.0266566 -0.75 -8 0.0266566 0.75 -8 0.0266566 2.25 -8 0.0266566 -2.25 -1.07 1.00666 -0.75 -1.07 1.00666 0.75 -1.07 1.00666 2.25 -1.07 1.00666 -2.25 3.52 2.55666 -0.75 3.52 2.55666 0.75 3.52 2.55666 2.25 3.52 2.55666 -2.25 6.98 4.55666 -0.75 6.98 4.55666 0.75 6.98 4.55666 2.25 6.98 4.55666</float_array>
+          <technique_common><accessor source="#dashplate_flat_body_stunt-positions-array" count="16" stride="3"><param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/></accessor></technique_common>
+        </source>
+        <source id="dashplate_flat_body_stunt-normals">
+          <float_array id="dashplate_flat_body_stunt-normals-array" count="3">0 0 1</float_array>
+          <technique_common><accessor source="#dashplate_flat_body_stunt-normals-array" count="1" stride="3"><param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/></accessor></technique_common>
+        </source>
+        <source id="dashplate_flat_body_stunt-map">
+          <float_array id="dashplate_flat_body_stunt-map-array" count="32">0 0 0.3333333 0 0.6666667 0 1 0 0 0.4626168 0.3333333 0.4626168 0.6666667 0.4626168 1 0.4626168 0 0.7690254 0.3333333 0.7690254 0.6666667 0.7690254 1 0.7690254 0 1 0.3333333 1 0.6666667 1 1 1</float_array>
+          <technique_common><accessor source="#dashplate_flat_body_stunt-map-array" count="16" stride="2"><param name="S" type="float"/><param name="T" type="float"/></accessor></technique_common>
+        </source>
+        <vertices id="dashplate_flat_body_stunt-vertices"><input semantic="POSITION" source="#dashplate_flat_body_stunt-positions"/></vertices>
+        <triangles material="dashplate_flat_body_stunt-material" count="18">
+          <input semantic="VERTEX" source="#dashplate_flat_body_stunt-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#dashplate_flat_body_stunt-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#dashplate_flat_body_stunt-map" offset="2" set="0"/>
+          <p>0 0 0 1 0 1 5 0 5 0 0 0 5 0 5 4 0 4 1 0 1 2 0 2 6 0 6 1 0 1 6 0 6 5 0 5 2 0 2 3 0 3 7 0 7 2 0 2 7 0 7 6 0 6 4 0 4 5 0 5 9 0 9 4 0 4 9 0 9 8 0 8 5 0 5 6 0 6 10 0 10 5 0 5 10 0 10 9 0 9 6 0 6 7 0 7 11 0 11 6 0 6 11 0 11 10 0 10 8 0 8 9 0 9 13 0 13 8 0 8 13 0 13 12 0 12 9 0 9 10 0 10 14 0 14 9 0 9 14 0 14 13 0 13 10 0 10 11 0 11 15 0 15 10 0 10 15 0 15 14 0 14</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="dashplate_flat_body_stunt" name="dashplate_flat_body_stunt" type="NODE">
+        <instance_geometry url="#dashplate_flat_body_stunt-mesh">
+          <bind_material><technique_common><instance_material symbol="dashplate_flat_body_stunt-material" target="#dashplate_flat_body_stunt-material"/></technique_common></bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene><instance_visual_scene url="#Scene"/></scene>
+</COLLADA>
