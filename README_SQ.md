@@ -3,9 +3,10 @@
 
 Bir, V10 😄 — tani modi ka **vetëm 5 pad-a: 100 / 200 / 300 / 500 / 1000 km/h**, secili me stil, madhësi e animacion të vetin!
 
-## 🛫 NEW: Boost (500km/h) — Ramp
-- **Rampë 6×12m me ~14°** — dil me 500 km/h dhe **FLUTRON** (nehëria ~57m, flutim ~800m!)
-- E ndërtuar me recetën e sigurt: trupi = klon i 500-s së provuar (52 beams identike, vetëm 4 nyje të ngritura), sipërfaqet vizuale të pjerrëta, **materialet e njëjta të 500-s** (skin + animacion i njëjtë)
+## 🛫 Boost (500km/h) — Ramp Launch
+- **Klon i saktë i pad-it 500 që punon** (i njëjti trup, i njëjti skin, i njëjti animacion) — pa asnjë pjesë të re fizike
+- "Rampa" = **këndi i lëshimit 14° lart** (funksionaliteti ekzistues `$verticalAngleDegree` i modit): makina qëllitet me 500 km/h drejt pjerrtë → **fluton ~800m!**
+- Këndin e ndryshon brenda lojës: **Tuning → Vertical Angle** (0–90°, provo 30° për flutim vertikal!)
 
 ## 🎯 Lëshimi (rregulluar)
 - Nuk është më "shumë i butë": **500 km/h tani 0.6s** (ishte 1.6s) — hov i shpejt por jo instant
@@ -31,7 +32,7 @@ Secili ka dizajn të vetin (chuckrona, numra, motive) + teksturë animacioni uni
 
 ## Instalimi
 1. Fshij V9 nga `Documents/BeamNG.drive/mods/`
-2. Vendos `dashplate_mathkuro_KMH_FAMILY_V12_RAMP.zip`
+2. Vendos `dashplate_mathkuro_KMH_FAMILY_V12_1_RAMP_LAUNCH.zip`
 3. Spawn nga Props → Gimmick Pad: **Boost (100km/h) — Pulse**, **— Strike**, **— Afterburn**, **(500km/h) XL**, **(1000km/h) — Warp**
 
 > Emrat në selector tani kanë stilin pas tyre — ashtu e di që V10 është live. Cache clear nëse loja të mban të vjetrin!

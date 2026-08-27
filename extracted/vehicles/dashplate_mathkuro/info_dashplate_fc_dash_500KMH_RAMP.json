@@ -1,6 +1,6 @@
 {
-  "Configuration": "Boost (500km/h, 310mph) \u2014 Ramp",
-  "Description": "Boost to 500 km/h up a 12 m launch ramp (~14 deg) and FLY. Cyber-Glass look with animated energy flow.",
+  "Configuration": "Boost (500km/h, 310mph) \u2014 Ramp Launch",
+  "Description": "Boost to 500 km/h launched 14 degrees upward \u2014 the pad flings you into the air like a ramp. Same proven Cyber-Glass pad; adjust the launch angle in Tuning (Vertical Angle).",
   "Value": 100000,
   "Weight": 2000,
   "defaultPaintName1": "Orange"
