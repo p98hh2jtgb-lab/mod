@@ -1,7 +1,14 @@
-# 🚀 Gimmick Pad — **KMH FAMILY V12** (5 pads + RAMPË 500 km/h!)
+# 🚀 Gimmick Pad — **KMH FAMILY V13** (+ JUMP RAMP fizike!)
+> **V13:** U gjet bug-u i vërtetë i DAE-ve të gjeneruara (format i `<p>` indekseve) dhe u ndreq — tani të gjitha mesh-at e gjeneruara ndjekin konventën byte-për-byte të origjinalit.
 > **V11:** të 5 pad-at tani janë **klone ekzakte të pad-it 500 km/h që të punon** — i njëjti trup 6×18m, i njëjta strukturë e provuar; ndryshojnë vetëm kmh, look-i dhe animacioni.
 
 Bir, V10 😄 — tani modi ka **vetëm 5 pad-a: 100 / 200 / 300 / 500 / 1000 km/h**, secili me stil, madhësi e animacion të vetin!
+
+## 🚀 JUMP Ramp (500km/h) — Hyperjump
+- **Rampë FIZIKE 8×20m (~19°), më e madhe se pad-i 500** — hyn nga mbrapa, dash-i 500 km/h të ngjet nëpër të dhe **FLUTRON**
+- Stil i re **Hyperjump magenta**: shigjeta dyfish lart, "JUMP", sparks + **animacion i re 2.0** (magenta flow)
+- Rrezja 12m, rampa e nisjes 0.6s
+- Bonus: edhe mesh-i bazë i pad-it 500 u ndregjua (përshkrimi më lart)
 
 ## 🛫 Boost (500km/h) — Ramp Launch
 - **Klon i saktë i pad-it 500 që punon** (i njëjti trup, i njëjti skin, i njëjti animacion) — pa asnjë pjesë të re fizike
@@ -32,7 +39,7 @@ Secili ka dizajn të vetin (chuckrona, numra, motive) + teksturë animacioni uni
 
 ## Instalimi
 1. Fshij V9 nga `Documents/BeamNG.drive/mods/`
-2. Vendos `dashplate_mathkuro_KMH_FAMILY_V12_1_RAMP_LAUNCH.zip`
+2. Vendos `dashplate_mathkuro_KMH_FAMILY_V13_JUMP.zip`
 3. Spawn nga Props → Gimmick Pad: **Boost (100km/h) — Pulse**, **— Strike**, **— Afterburn**, **(500km/h) XL**, **(1000km/h) — Warp**
 
 > Emrat në selector tani kanë stilin pas tyre — ashtu e di që V10 është live. Cache clear nëse loja të mban të vjetrin!

@@ -1,0 +1,7 @@
+{
+  "Configuration": "JUMP Ramp (500km/h) \u2014 Hyperjump",
+  "Description": "Physical launch ramp 8x20 m (~19 deg): hit it with a 500 km/h boost and FLY. Magenta Hyperjump style with animated FX.",
+  "Value": 100000,
+  "Weight": 2000,
+  "defaultPaintName1": "Orange"
+}

@@ -388,5 +388,30 @@
     "doubleSided": true,
     "invertBackFaceNormals": true,
     "version": 1
+  },
+  "dashplate_flat_jump_flow": {
+    "name": "dashplate_flat_jump_flow",
+    "mapTo": "dashplate_flat_jump_flow",
+    "class": "Material",
+    "Stages": [
+      {
+        "diffuseMap": "/vehicles/dashplate_mathkuro/skins/dashplate_jump_flow_b.color.png",
+        "animFlags": 1,
+        "scrollDir": [
+          0,
+          -1
+        ],
+        "scrollSpeed": 2.0,
+        "glow": true
+      },
+      {},
+      {},
+      {}
+    ],
+    "translucent": true,
+    "castShadows": false,
+    "doubleSided": true,
+    "invertBackFaceNormals": true,
+    "version": 1
   }
 }
