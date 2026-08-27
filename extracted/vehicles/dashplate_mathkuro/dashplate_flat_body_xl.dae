@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset><unit name="meter" meter="1"/><up_axis>Z_UP</up_axis></asset>
+  <library_effects>
+    <effect id="dashplate_flat_body_xl-effect">
+      <profile_COMMON><technique sid="common"><lambert><diffuse><color>1 1 1 1</color></diffuse></lambert></technique></profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="dashplate_flat_body_xl-material" name="dashplate_flat_body_main">
+      <instance_effect url="#dashplate_flat_body_xl-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="dashplate_flat_body_xl-mesh" name="dashplate_flat_body_xl">
+      <mesh>
+        <source id="dashplate_flat_body_xl-positions">
+          <float_array id="dashplate_flat_body_xl-positions-array" count="120">-1.500000 -4.500000 0.016657 -0.500000 -4.500000 0.016657 0.500000 -4.500000 0.016657 1.500000 -4.500000 0.016657 -1.500000 -3.500000 0.016657 -0.500000 -3.500000 0.016657 0.500000 -3.500000 0.016657 1.500000 -3.500000 0.016657 -1.500000 -2.500000 0.016657 -0.500000 -2.500000 0.016657 0.500000 -2.500000 0.016657 1.500000 -2.500000 0.016657 -1.500000 -1.500000 0.016657 -0.500000 -1.500000 0.016657 0.500000 -1.500000 0.016657 1.500000 -1.500000 0.016657 -1.500000 -0.500000 0.016657 -0.500000 -0.500000 0.016657 0.500000 -0.500000 0.016657 1.500000 -0.500000 0.016657 -1.500000 0.500000 0.016657 -0.500000 0.500000 0.016657 0.500000 0.500000 0.016657 1.500000 0.500000 0.016657 -1.500000 1.500000 0.016657 -0.500000 1.500000 0.016657 0.500000 1.500000 0.016657 1.500000 1.500000 0.016657 -1.500000 2.500000 0.016657 -0.500000 2.500000 0.016657 0.500000 2.500000 0.016657 1.500000 2.500000 0.016657 -1.500000 3.500000 0.016657 -0.500000 3.500000 0.016657 0.500000 3.500000 0.016657 1.500000 3.500000 0.016657 -1.500000 4.500000 0.016657 -0.500000 4.500000 0.016657 0.500000 4.500000 0.016657 1.500000 4.500000 0.016657</float_array>
+          <technique_common><accessor source="#dashplate_flat_body_xl-positions-array" count="40" stride="3"><param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/></accessor></technique_common>
+        </source>
+        <source id="dashplate_flat_body_xl-normals">
+          <float_array id="dashplate_flat_body_xl-normals-array" count="3">0 0 1</float_array>
+          <technique_common><accessor source="#dashplate_flat_body_xl-normals-array" count="1" stride="3"><param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/></accessor></technique_common>
+        </source>
+        <source id="dashplate_flat_body_xl-map">
+          <float_array id="dashplate_flat_body_xl-map-array" count="80">0.0000000 1.0000000 0.3333333 1.0000000 0.6666667 1.0000000 1.0000000 1.0000000 0.0000000 0.8888889 0.3333333 0.8888889 0.6666667 0.8888889 1.0000000 0.8888889 0.0000000 0.7777778 0.3333333 0.7777778 0.6666667 0.7777778 1.0000000 0.7777778 0.0000000 0.6666667 0.3333333 0.6666667 0.6666667 0.6666667 1.0000000 0.6666667 0.0000000 0.5555556 0.3333333 0.5555556 0.6666667 0.5555556 1.0000000 0.5555556 0.0000000 0.4444444 0.3333333 0.4444444 0.6666667 0.4444444 1.0000000 0.4444444 0.0000000 0.3333333 0.3333333 0.3333333 0.6666667 0.3333333 1.0000000 0.3333333 0.0000000 0.2222222 0.3333333 0.2222222 0.6666667 0.2222222 1.0000000 0.2222222 0.0000000 0.1111111 0.3333333 0.1111111 0.6666667 0.1111111 1.0000000 0.1111111 0.0000000 0.0000000 0.3333333 0.0000000 0.6666667 0.0000000 1.0000000 0.0000000</float_array>
+          <technique_common><accessor source="#dashplate_flat_body_xl-map-array" count="40" stride="2"><param name="S" type="float"/><param name="T" type="float"/></accessor></technique_common>
+        </source>
+        <vertices id="dashplate_flat_body_xl-vertices"><input semantic="POSITION" source="#dashplate_flat_body_xl-positions"/></vertices>
+        <triangles material="dashplate_flat_body_xl-material" count="27">
+          <input semantic="VERTEX" source="#dashplate_flat_body_xl-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#dashplate_flat_body_xl-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#dashplate_flat_body_xl-map" offset="2" set="0"/>
+          <p>0 1 5 0 5 4 1 2 6 1 6 5 2 3 7 2 7 6 4 5 9 4 9 8 5 6 10 5 10 9 6 7 11 6 11 10 8 9 13 8 13 12 9 10 14 9 14 13 10 11 15 10 15 14 12 13 17 12 17 16 13 14 18 13 18 17 14 15 19 14 19 18 16 17 21 16 21 20 17 18 22 17 22 21 18 19 23 18 23 22 20 21 25 20 25 24 21 22 26 21 26 25 22 23 27 22 27 26 24 25 29 24 29 28 25 26 30 25 30 29 26 27 31 26 31 30 28 29 33 28 33 32 29 30 34 29 34 33 30 31 35 30 35 34 32 33 37 32 37 36 33 34 38 33 38 37 34 35 39 34 39 38</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="dashplate_flat_body_xl" name="dashplate_flat_body_xl" type="NODE">
+        <instance_geometry url="#dashplate_flat_body_xl-mesh">
+          <bind_material><technique_common><instance_material symbol="dashplate_flat_body_xl-material" target="#dashplate_flat_body_xl-material"/></technique_common></bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene><instance_visual_scene url="#Scene"/></scene>
+</COLLADA>

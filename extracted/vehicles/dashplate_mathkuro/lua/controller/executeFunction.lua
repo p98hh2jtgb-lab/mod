@@ -423,10 +423,14 @@ local function update(dtPhys)
   local myId  = obj:getID()
   local myPos = obj:getPosition()
 
+  -- トリガー半径（XLパッド用に設定可能 / per-pad trigger radius, default 3m）
+  local triggerRadius = tonumber(cachedParams and cachedParams.dashplateTriggerRadius) or 3
+  local triggerSquaredDistance = triggerRadius * triggerRadius
+
   if cachedVluaFunc then
     -- VLUA直接実行（GEをスキップ）
     for vid, data in pairs(mapmgr.getObjects() or {}) do
-      if vid ~= myId and myPos:squaredDistance(data.pos) < DASHFIELD_SQUARED_DISTANCE then
+      if vid ~= myId and myPos:squaredDistance(data.pos) < triggerSquaredDistance then
         cachedVluaFunc(vid, data, cachedParams)
       end
     end
@@ -434,7 +438,7 @@ local function update(dtPhys)
     -- GE委譲（teleport, paintRandomColor, repair, openLatches）
     local suffix = cachedGeSuffix
     for vid, data in pairs(mapmgr.getObjects() or {}) do
-      if vid ~= myId and myPos:squaredDistance(data.pos) < DASHFIELD_SQUARED_DISTANCE then
+      if vid ~= myId and myPos:squaredDistance(data.pos) < triggerSquaredDistance then
         obj:queueGameEngineLua("mathkuro_dashplate.executeOnVehicle(" .. vid .. suffix)
       end
     end

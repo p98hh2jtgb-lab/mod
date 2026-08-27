@@ -400,7 +400,9 @@ local function update(dtPhys)
   local myPos = obj:getPosition()
   for _, dashplate in ipairs(cachedDashplates) do
     local dpPos = vec3(dashplate.pos.x, dashplate.pos.y, dashplate.pos.z)
-    if myPos:squaredDistance(dpPos) < DASHFIELD_SQUARED_DISTANCE then
+    -- per-pad trigger radius (XL pads), fallback to default 3m
+    local triggerRadius = tonumber(dashplate.params and dashplate.params.dashplateTriggerRadius) or 3
+    if myPos:squaredDistance(dpPos) < triggerRadius * triggerRadius then
       applyGimmick(dashplate)
     end
   end

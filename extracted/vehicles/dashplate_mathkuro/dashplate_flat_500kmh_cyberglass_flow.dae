@@ -15,7 +15,7 @@
     <geometry id="dashplate_flat_500kmh_cyberglass_flow-mesh" name="dashplate_flat_500kmh_cyberglass_flow">
       <mesh>
         <source id="dashplate_flat_500kmh_cyberglass_flow-positions">
-          <float_array id="dashplate_flat_500kmh_cyberglass_flow-positions-array" count="12">-2 -2 0.03 2 -2 0.03 2 2 0.03 -2 2 0.03</float_array>
+          <float_array id="dashplate_flat_500kmh_cyberglass_flow-positions-array" count="12">-1.5 -4.5 0.03 1.5 -4.5 0.03 1.5 4.5 0.03 -1.5 4.5 0.03</float_array>
           <technique_common><accessor source="#dashplate_flat_500kmh_cyberglass_flow-positions-array" count="4" stride="3"><param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/></accessor></technique_common>
         </source>
         <source id="dashplate_flat_500kmh_cyberglass_flow-normals">

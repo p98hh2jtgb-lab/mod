@@ -298,7 +298,10 @@ local function execDashplate(dashplateVid, powerLevel, directionVector)
     'local d=%s local v=obj:getVelocity() thrusters.applyVelocity(v-d*v:dot(d)+d*%.4f,%.4f)'
   for vid, veh in activeVehiclesIterator() do
     if vid ~= dashplateVid then
-      if veh:getPosition():distance(dashplatePos) < DASHFIELD_DISTANCE then
+      -- per-pad trigger radius (XL pads), fallback to default 3m
+      local registryEntry = dashplateRegistry[dashplateVid]
+      local triggerDistance = tonumber(registryEntry and registryEntry.params and registryEntry.params.dashplateTriggerRadius) or DASHFIELD_DISTANCE
+      if veh:getPosition():distance(dashplatePos) < triggerDistance then
         local dirExpr = directionVector == nil
           and 'obj:getDirectionVector():normalized()'
           or serialize(vec3(directionVector):normalized())
