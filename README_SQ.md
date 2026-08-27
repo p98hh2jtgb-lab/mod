@@ -1,5 +1,5 @@
-# 🚀 Gimmick Pad — **KMH FAMILY V10.1** (5 pista, 5 stile, 5 animacione) — BUG FIXED
-> **Fix:** trupat S/M/L/MEGA kishin beams/triangles të korruptuara (prandaj pad-at binin nën tokë). Të 5-ta validohen strukturëisht tani ✓
+# 🚀 Gimmick Pad — **KMH FAMILY V11** (5 klone të 500-s që punon!)
+> **V11:** të 5 pad-at tani janë **klone ekzakte të pad-it 500 km/h që të punon** — i njëjti trup 6×18m, i njëjta strukturë e provuar; ndryshojnë vetëm kmh, look-i dhe animacioni.
 
 Bir, V10 😄 — tani modi ka **vetëm 5 pad-a: 100 / 200 / 300 / 500 / 1000 km/h**, secili me stil, madhësi e animacion të vetin!
 
@@ -27,7 +27,7 @@ Secili ka dizajn të vetin (chuckrona, numra, motive) + teksturë animacioni uni
 
 ## Instalimi
 1. Fshij V9 nga `Documents/BeamNG.drive/mods/`
-2. Vendos `dashplate_mathkuro_KMH_FAMILY_V10_1_FIXED.zip`
+2. Vendos `dashplate_mathkuro_KMH_FAMILY_V11_CLONES.zip`
 3. Spawn nga Props → Gimmick Pad: **Boost (100km/h) — Pulse**, **— Strike**, **— Afterburn**, **(500km/h) XL**, **(1000km/h) — Warp**
 
 > Emrat në selector tani kanë stilin pas tyre — ashtu e di që V10 është live. Cache clear nëse loja të mban të vjetrin!

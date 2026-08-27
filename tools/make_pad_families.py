@@ -117,15 +117,10 @@ def draw_design(cfg):
     m, cut = max(10,W//30), W//13
     frame = [(m+cut,m),(W-m-cut,m),(W-m,m+cut),(W-m,H-m-cut),(W-m-cut,H-m),(m+cut,H-m),(m,H-m-cut),(m,m+cut)]
     # glass background clipped to frame
-    _mask = Image.new('L',(W,H),0); ImageDraw.Draw(_mask).polygon(frame,fill=255)
-    _mask = _mask.filter(ImageFilter.GaussianBlur(1.2))
-    _bg = Image.new('RGBA',(W,H),(0,0,0,0)); _bd = ImageDraw.Draw(_bg)
     tr,tg,tb = theme
     for y in range(H):
         t = y/H
-        _bd.line([(0,y),(W,y)], fill=(10+tr//14, 16+tg//14, 20+tb//14, 165-int(24*t)))
-    _bg.putalpha(Image.composite(_bg.getchannel('A'), Image.new('L',(W,H),0), _mask))
-    design.alpha_composite(_bg)
+        d.line([(0,y),(W,y)], fill=(10+tr//14, 16+tg//14, 20+tb//14, 252-int(30*t)))
     # micro grid
     for y in range(0,H,16): d.line([(0,y),(W,y)],fill=(tr//2,tg//2,tb//2,10))
     for x in range(0,W,16): d.line([(x,0),(x,H)],fill=(tr//2,tg//2,tb//2,10))
@@ -333,7 +328,7 @@ for cfg in PADS:
     design.save(dp,'PNG',optimize=True)
     bufs = FLOWS[tag](cfg['theme'])
     fp = f'{OUT_S}/dashplate_{tag}_flow_b.color.png'
-    _write(bufs, cfg['theme'], fp)
+    _write(bufs, cfg['theme'], fp, 0 if tag in ('strike','afterburn') else 70)
     flow1024 = Image.open(fp).convert('RGBA')
     # DAEs
     body_name = {'pulse':'dashplate_flat_body_s','strike':'dashplate_flat_body_m',

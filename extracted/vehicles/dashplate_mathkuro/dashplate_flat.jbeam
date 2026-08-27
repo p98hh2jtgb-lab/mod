@@ -1,560 +1,4 @@
 {
-    "dashplate_flat_body_s": {
-        "information": {
-            "authors": "mathkuro (based on official Kick Plate)",
-            "name": "Dash Plate Body(Flat S 2x3m)"
-        },
-        "slotType": "dashplate_body",
-        "slots": [
-            ["type", "default", "description"]
-        ],
-        "refNodes":[
-            ["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"],
-            ["ref", "refback", "refleft", "refup", "refleftCorner", "refrightCorner"]
-        ],
-        "cameraExternal":{
-            "distance":7,
-            "distanceMin":4,
-            "offset":{"x":0, "y":1.5, "z":1},
-            "fov":65
-        },
-        "flexbodies": [
-            ["mesh", "[group]:", "nonFlexMaterials"]
-        ],
-        "nodes": [
-             ["id", "posX", "posY", "posZ"],
-             {"frictionCoef":10.0},
-             {"nodeMaterial":"|NM_METAL"},
-
-             //up refnode
-             {"collision":false},
-             ["ref", 0.0, 0.0, 0.0],
-             ["refback", 0.0, 1.0, 0.0],
-             ["refleft", 2.0, 0.0, 0.0],
-             ["refup", 0.0, 0.0, 0.2],
-             ["refleftCorner", 2.0, -2.0, 0.0],
-             ["refrightCorner", -2.0, -2.0, 0.0],
-
-             //dashplate
-             {"collision":true},
-             {"selfCollision":false},
-             {"group":"dp"},
-             {"nodeWeight":500},
-             ["dp_1",-1,-1.5, -0.1],
-             ["dp_3",-1, 1.5, -0.1],
-             ["dp_5", 1,-1.5, -0.1],
-             ["dp_7", 1, 1.5, -0.1],
-             {"collision":false},
-             ["dp_0",-1,-1.5, 0.2],
-             ["dp_2",-1, 1.5, 0.2],
-             ["dp_4", 1,-1.5, 0.2],
-             ["dp_6", 1, 1.5, 0.2]
-            ],
-        "beams": [
-              ["id1:", "id2:"],
-              {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-              {"beamSpring":50001000,"beamDamp":5000},
-              {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
-              // dashplate
-              ["dp_0","dp_6"],
-              ["dp_0","dp_4"],
-              ["dp_2","dp_6"],
-              ["dp_0","dp_2"],
-              ["dp_4","dp_6"],
-              ["dp_1","dp_0"],
-              ["dp_3","dp_1"],
-              ["dp_2","dp_3"],
-              ["dp_7","dp_3"],
-              ["dp_6","dp_7"],
-              ["dp_5","dp_7"],
-              ["dp_4","dp_5"],
-              ["dp_1","dp_5"],
-              ["dp_4","dp_2"],
-              ["dp_2","dp_1"],
-              ["dp_3","dp_0"],
-              ["dp_6","dp_3"],
-              ["dp_7","dp_2"],
-              ["dp_6","dp_5"],
-              ["dp_7","dp_4"],
-              ["dp_7","dp_1"],
-              ["dp_5","dp_3"],
-              ["dp_4","dp_1"],
-              ["dp_5","dp_0"],
-              ["dp_4","dp_3"],
-              ["dp_6","dp_1"],
-              ["dp_7","dp_0"],
-              ["dp_5","dp_2"],
-    
-              //refnode
-              {"beamSpring":100000,"beamDamp":10000},
-              ["ref", "dp_6"],
-              ["ref", "dp_4"],
-              ["ref", "dp_2"],
-              ["ref", "dp_0"],
-              ["refup", "dp_6"],
-              ["refup", "dp_4"],
-              ["refup", "dp_2"],
-              ["refup", "dp_0"],
-              ["refback", "dp_6"],
-              ["refback", "dp_4"],
-              ["refback", "dp_2"],
-              ["refback", "dp_0"],
-              ["refleft", "dp_6"],
-              ["refleft", "dp_4"],
-              ["refleft", "dp_2"],
-              ["refleft", "dp_0"],
-              ["refleftCorner", "dp_6"],
-              ["refleftCorner", "dp_4"],
-              ["refleftCorner", "dp_2"],
-              ["refleftCorner", "dp_0"],
-              ["refrightCorner", "dp_6"],
-              ["refrightCorner", "dp_4"],
-              ["refrightCorner", "dp_2"],
-              ["refrightCorner", "dp_0"]
-        ],
-        "triangles": [
-               ["id1:","id2:","id3:"],
-               {"groundModel":"dashplate"},
-               //dashplate
-               ["dp_1", "dp_3", "dp_5"],
-               ["dp_1", "dp_3", "dp_7"],
-               ["dp_1", "dp_5", "dp_7"],
-               ["dp_3", "dp_5", "dp_7"]
-            ],
-        "general": {
-         "enableTracking": false
-        }
-    },
-    "dashplate_flat_body_m": {
-        "information": {
-            "authors": "mathkuro (based on official Kick Plate)",
-            "name": "Dash Plate Body(Flat M 2.5x4.5m)"
-        },
-        "slotType": "dashplate_body",
-        "slots": [
-            ["type", "default", "description"]
-        ],
-        "refNodes":[
-            ["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"],
-            ["ref", "refback", "refleft", "refup", "refleftCorner", "refrightCorner"]
-        ],
-        "cameraExternal":{
-            "distance":9,
-            "distanceMin":5,
-            "offset":{"x":0, "y":1.5, "z":1},
-            "fov":65
-        },
-        "flexbodies": [
-            ["mesh", "[group]:", "nonFlexMaterials"]
-        ],
-        "nodes": [
-             ["id", "posX", "posY", "posZ"],
-             {"frictionCoef":10.0},
-             {"nodeMaterial":"|NM_METAL"},
-
-             //up refnode
-             {"collision":false},
-             ["ref", 0.0, 0.0, 0.0],
-             ["refback", 0.0, 1.0, 0.0],
-             ["refleft", 2.0, 0.0, 0.0],
-             ["refup", 0.0, 0.0, 0.2],
-             ["refleftCorner", 2.0, -2.0, 0.0],
-             ["refrightCorner", -2.0, -2.0, 0.0],
-
-             //dashplate
-             {"collision":true},
-             {"selfCollision":false},
-             {"group":"dp"},
-             {"nodeWeight":500},
-             ["dp_1",-1.25,-2.25, -0.1],
-             ["dp_3",-1.25, 2.25, -0.1],
-             ["dp_5", 1.25,-2.25, -0.1],
-             ["dp_7", 1.25, 2.25, -0.1],
-             {"collision":false},
-             ["dp_0",-1.25,-2.25, 0.2],
-             ["dp_2",-1.25, 2.25, 0.2],
-             ["dp_4", 1.25,-2.25, 0.2],
-             ["dp_6", 1.25, 2.25, 0.2]
-            ],
-        "beams": [
-              ["id1:", "id2:"],
-              {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-              {"beamSpring":50001000,"beamDamp":5000},
-              {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
-              // dashplate
-              ["dp_0","dp_6"],
-              ["dp_0","dp_4"],
-              ["dp_2","dp_6"],
-              ["dp_0","dp_2"],
-              ["dp_4","dp_6"],
-              ["dp_1","dp_0"],
-              ["dp_3","dp_1"],
-              ["dp_2","dp_3"],
-              ["dp_7","dp_3"],
-              ["dp_6","dp_7"],
-              ["dp_5","dp_7"],
-              ["dp_4","dp_5"],
-              ["dp_1","dp_5"],
-              ["dp_4","dp_2"],
-              ["dp_2","dp_1"],
-              ["dp_3","dp_0"],
-              ["dp_6","dp_3"],
-              ["dp_7","dp_2"],
-              ["dp_6","dp_5"],
-              ["dp_7","dp_4"],
-              ["dp_7","dp_1"],
-              ["dp_5","dp_3"],
-              ["dp_4","dp_1"],
-              ["dp_5","dp_0"],
-              ["dp_4","dp_3"],
-              ["dp_6","dp_1"],
-              ["dp_7","dp_0"],
-              ["dp_5","dp_2"],
-    
-              //refnode
-              {"beamSpring":100000,"beamDamp":10000},
-              ["ref", "dp_6"],
-              ["ref", "dp_4"],
-              ["ref", "dp_2"],
-              ["ref", "dp_0"],
-              ["refup", "dp_6"],
-              ["refup", "dp_4"],
-              ["refup", "dp_2"],
-              ["refup", "dp_0"],
-              ["refback", "dp_6"],
-              ["refback", "dp_4"],
-              ["refback", "dp_2"],
-              ["refback", "dp_0"],
-              ["refleft", "dp_6"],
-              ["refleft", "dp_4"],
-              ["refleft", "dp_2"],
-              ["refleft", "dp_0"],
-              ["refleftCorner", "dp_6"],
-              ["refleftCorner", "dp_4"],
-              ["refleftCorner", "dp_2"],
-              ["refleftCorner", "dp_0"],
-              ["refrightCorner", "dp_6"],
-              ["refrightCorner", "dp_4"],
-              ["refrightCorner", "dp_2"],
-              ["refrightCorner", "dp_0"]
-        ],
-        "triangles": [
-               ["id1:","id2:","id3:"],
-               {"groundModel":"dashplate"},
-               //dashplate
-               ["dp_1", "dp_3", "dp_5"],
-               ["dp_1", "dp_3", "dp_7"],
-               ["dp_1", "dp_5", "dp_7"],
-               ["dp_3", "dp_5", "dp_7"]
-            ],
-        "general": {
-         "enableTracking": false
-        }
-    },
-    "dashplate_flat_body_l": {
-        "information": {
-            "authors": "mathkuro (based on official Kick Plate)",
-            "name": "Dash Plate Body(Flat L 3x6m)"
-        },
-        "slotType": "dashplate_body",
-        "slots": [
-            ["type", "default", "description"]
-        ],
-        "refNodes":[
-            ["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"],
-            ["ref", "refback", "refleft", "refup", "refleftCorner", "refrightCorner"]
-        ],
-        "cameraExternal":{
-            "distance":11,
-            "distanceMin":5,
-            "offset":{"x":0, "y":1.5, "z":1},
-            "fov":65
-        },
-        "flexbodies": [
-            ["mesh", "[group]:", "nonFlexMaterials"]
-        ],
-        "nodes": [
-             ["id", "posX", "posY", "posZ"],
-             {"frictionCoef":10.0},
-             {"nodeMaterial":"|NM_METAL"},
-
-             //up refnode
-             {"collision":false},
-             ["ref", 0.0, 0.0, 0.0],
-             ["refback", 0.0, 1.0, 0.0],
-             ["refleft", 2.0, 0.0, 0.0],
-             ["refup", 0.0, 0.0, 0.2],
-             ["refleftCorner", 2.0, -2.0, 0.0],
-             ["refrightCorner", -2.0, -2.0, 0.0],
-
-             //dashplate
-             {"collision":true},
-             {"selfCollision":false},
-             {"group":"dp"},
-             {"nodeWeight":500},
-             ["dp_1",-1.5,-3, -0.1],
-             ["dp_3",-1.5, 3, -0.1],
-             ["dp_5", 1.5,-3, -0.1],
-             ["dp_7", 1.5, 3, -0.1],
-             {"collision":false},
-             ["dp_0",-1.5,-3, 0.2],
-             ["dp_2",-1.5, 3, 0.2],
-             ["dp_4", 1.5,-3, 0.2],
-             ["dp_6", 1.5, 3, 0.2]
-            ],
-        "beams": [
-              ["id1:", "id2:"],
-              {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-              {"beamSpring":50001000,"beamDamp":5000},
-              {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
-              // dashplate
-              ["dp_0","dp_6"],
-              ["dp_0","dp_4"],
-              ["dp_2","dp_6"],
-              ["dp_0","dp_2"],
-              ["dp_4","dp_6"],
-              ["dp_1","dp_0"],
-              ["dp_3","dp_1"],
-              ["dp_2","dp_3"],
-              ["dp_7","dp_3"],
-              ["dp_6","dp_7"],
-              ["dp_5","dp_7"],
-              ["dp_4","dp_5"],
-              ["dp_1","dp_5"],
-              ["dp_4","dp_2"],
-              ["dp_2","dp_1"],
-              ["dp_3","dp_0"],
-              ["dp_6","dp_3"],
-              ["dp_7","dp_2"],
-              ["dp_6","dp_5"],
-              ["dp_7","dp_4"],
-              ["dp_7","dp_1"],
-              ["dp_5","dp_3"],
-              ["dp_4","dp_1"],
-              ["dp_5","dp_0"],
-              ["dp_4","dp_3"],
-              ["dp_6","dp_1"],
-              ["dp_7","dp_0"],
-              ["dp_5","dp_2"],
-    
-              //refnode
-              {"beamSpring":100000,"beamDamp":10000},
-              ["ref", "dp_6"],
-              ["ref", "dp_4"],
-              ["ref", "dp_2"],
-              ["ref", "dp_0"],
-              ["refup", "dp_6"],
-              ["refup", "dp_4"],
-              ["refup", "dp_2"],
-              ["refup", "dp_0"],
-              ["refback", "dp_6"],
-              ["refback", "dp_4"],
-              ["refback", "dp_2"],
-              ["refback", "dp_0"],
-              ["refleft", "dp_6"],
-              ["refleft", "dp_4"],
-              ["refleft", "dp_2"],
-              ["refleft", "dp_0"],
-              ["refleftCorner", "dp_6"],
-              ["refleftCorner", "dp_4"],
-              ["refleftCorner", "dp_2"],
-              ["refleftCorner", "dp_0"],
-              ["refrightCorner", "dp_6"],
-              ["refrightCorner", "dp_4"],
-              ["refrightCorner", "dp_2"],
-              ["refrightCorner", "dp_0"]
-        ],
-        "triangles": [
-               ["id1:","id2:","id3:"],
-               {"groundModel":"dashplate"},
-               //dashplate
-               ["dp_1", "dp_3", "dp_5"],
-               ["dp_1", "dp_3", "dp_7"],
-               ["dp_1", "dp_5", "dp_7"],
-               ["dp_3", "dp_5", "dp_7"]
-            ],
-        "general": {
-         "enableTracking": false
-        }
-    },
-    "dashplate_flat_body_mega": {
-        "information": {
-            "authors": "mathkuro (based on official Kick Plate)",
-            "name": "Dash Plate Body(Flat MEGA 8x24m)"
-        },
-        "slotType": "dashplate_body",
-        "slots": [
-            ["type", "default", "description"]
-        ],
-        "refNodes":[
-            ["ref:", "back:", "left:", "up:", "leftCorner:", "rightCorner:"],
-            ["ref", "refback", "refleft", "refup", "refleftCorner", "refrightCorner"]
-        ],
-        "cameraExternal":{
-            "distance":36,
-            "distanceMin":10,
-            "offset":{"x":0, "y":1.5, "z":1},
-            "fov":65
-        },
-        "flexbodies": [
-            ["mesh", "[group]:", "nonFlexMaterials"]
-        ],
-        "nodes": [
-             ["id", "posX", "posY", "posZ"],
-             {"frictionCoef":10.0},
-             {"nodeMaterial":"|NM_METAL"},
-
-             //up refnode
-             {"collision":false},
-             ["ref", 0.0, 0.0, 0.0],
-             ["refback", 0.0, 1.0, 0.0],
-             ["refleft", 2.0, 0.0, 0.0],
-             ["refup", 0.0, 0.0, 0.2],
-             ["refleftCorner", 2.0, -2.0, 0.0],
-             ["refrightCorner", -2.0, -2.0, 0.0],
-
-             //dashplate
-             {"collision":true},
-             {"selfCollision":false},
-             {"group":"dp"},
-             {"nodeWeight":500},
-             ["dp_1",-4,-12, -0.1],
-             ["dp_3",-4, 12, -0.1],
-             ["dp_5", 4,-12, -0.1],
-             ["dp_7", 4, 12, -0.1],
-             {"collision":false},
-             ["dp_0",-4,-12, 0.2],
-             ["dp_2",-4, 12, 0.2],
-             ["dp_4", 4,-12, 0.2],
-             ["dp_6", 4, 12, 0.2]
-            ],
-        "beams": [
-              ["id1:", "id2:"],
-              {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-              {"beamSpring":50001000,"beamDamp":5000},
-              {"beamDeform":"FLT_MAX","beamStrength":"FLT_MAX"},
-              // dashplate
-              ["dp_0","dp_6"],
-              ["dp_0","dp_4"],
-              ["dp_2","dp_6"],
-              ["dp_0","dp_2"],
-              ["dp_4","dp_6"],
-              ["dp_1","dp_0"],
-              ["dp_3","dp_1"],
-              ["dp_2","dp_3"],
-              ["dp_7","dp_3"],
-              ["dp_6","dp_7"],
-              ["dp_5","dp_7"],
-              ["dp_4","dp_5"],
-              ["dp_1","dp_5"],
-              ["dp_4","dp_2"],
-              ["dp_2","dp_1"],
-              ["dp_3","dp_0"],
-              ["dp_6","dp_3"],
-              ["dp_7","dp_2"],
-              ["dp_6","dp_5"],
-              ["dp_7","dp_4"],
-              ["dp_7","dp_1"],
-              ["dp_5","dp_3"],
-              ["dp_4","dp_1"],
-              ["dp_5","dp_0"],
-              ["dp_4","dp_3"],
-              ["dp_6","dp_1"],
-              ["dp_7","dp_0"],
-              ["dp_5","dp_2"],
-    
-              //refnode
-              {"beamSpring":100000,"beamDamp":10000},
-              ["ref", "dp_6"],
-              ["ref", "dp_4"],
-              ["ref", "dp_2"],
-              ["ref", "dp_0"],
-              ["refup", "dp_6"],
-              ["refup", "dp_4"],
-              ["refup", "dp_2"],
-              ["refup", "dp_0"],
-              ["refback", "dp_6"],
-              ["refback", "dp_4"],
-              ["refback", "dp_2"],
-              ["refback", "dp_0"],
-              ["refleft", "dp_6"],
-              ["refleft", "dp_4"],
-              ["refleft", "dp_2"],
-              ["refleft", "dp_0"],
-              ["refleftCorner", "dp_6"],
-              ["refleftCorner", "dp_4"],
-              ["refleftCorner", "dp_2"],
-              ["refleftCorner", "dp_0"],
-              ["refrightCorner", "dp_6"],
-              ["refrightCorner", "dp_4"],
-              ["refrightCorner", "dp_2"],
-              ["refrightCorner", "dp_0"]
-        ],
-        "triangles": [
-               ["id1:","id2:","id3:"],
-               {"groundModel":"dashplate"},
-               //dashplate
-               ["dp_1", "dp_3", "dp_5"],
-               ["dp_1", "dp_3", "dp_7"],
-               ["dp_1", "dp_5", "dp_7"],
-               ["dp_3", "dp_5", "dp_7"]
-            ],
-        "general": {
-         "enableTracking": false
-        }
-    },
-    "dashplate_flat_mesh_100": {
-        "information":{
-            "authors":"Mathkuro",
-            "name":"Dash Plate Mesh — 100 km/h Pulse"
-        },
-        "slotType" : "dashplate_meshes",
-        "flexbodies": [
-            ["mesh", "[group]:"],
-            ["dashplate_flat_body_s", ["dp"]],
-            ["dashplate_flat_pulse_design", ["dp"]],
-            ["dashplate_flat_pulse_flow", ["dp"]]
-        ]
-    },
-    "dashplate_flat_mesh_200": {
-        "information":{
-            "authors":"Mathkuro",
-            "name":"Dash Plate Mesh — 200 km/h Strike"
-        },
-        "slotType" : "dashplate_meshes",
-        "flexbodies": [
-            ["mesh", "[group]:"],
-            ["dashplate_flat_body_m", ["dp"]],
-            ["dashplate_flat_strike_design", ["dp"]],
-            ["dashplate_flat_strike_flow", ["dp"]]
-        ]
-    },
-    "dashplate_flat_mesh_300": {
-        "information":{
-            "authors":"Mathkuro",
-            "name":"Dash Plate Mesh — 300 km/h Afterburn"
-        },
-        "slotType" : "dashplate_meshes",
-        "flexbodies": [
-            ["mesh", "[group]:"],
-            ["dashplate_flat_body_l", ["dp"]],
-            ["dashplate_flat_afterburn_design", ["dp"]],
-            ["dashplate_flat_afterburn_flow", ["dp"]]
-        ]
-    },
-    "dashplate_flat_mesh_1000": {
-        "information":{
-            "authors":"Mathkuro",
-            "name":"Dash Plate Mesh — 1000 km/h Warp"
-        },
-        "slotType" : "dashplate_meshes",
-        "flexbodies": [
-            ["mesh", "[group]:"],
-            ["dashplate_flat_body_mega", ["dp"]],
-            ["dashplate_flat_warp_design", ["dp"]],
-            ["dashplate_flat_warp_flow", ["dp"]]
-        ]
-    },
     "dashplate_flat_body_xl": {
         "information": {
             "authors": "mathkuro (based on official Kick Plate)",
@@ -816,6 +260,58 @@
         "flexbodies": [
             ["mesh", "[group]:"],
             ["dashplate_flat_body", ["dp"]]
+        ]
+    },
+    "dashplate_flat_mesh_k100_fam": {
+        "information":{
+            "authors":"Mathkuro",
+            "name":"Dash Plate Mesh — 100 km/h Pulse"
+        },
+        "slotType" : "dashplate_meshes",
+        "flexbodies": [
+            ["mesh", "[group]:"],
+            ["dashplate_flat_body_xl", ["dp"]],
+            ["dashplate_flat_pulse_design", ["dp"]],
+            ["dashplate_flat_pulse_flow", ["dp"]]
+        ]
+    },
+    "dashplate_flat_mesh_k200_fam": {
+        "information":{
+            "authors":"Mathkuro",
+            "name":"Dash Plate Mesh — 200 km/h Strike"
+        },
+        "slotType" : "dashplate_meshes",
+        "flexbodies": [
+            ["mesh", "[group]:"],
+            ["dashplate_flat_body_xl", ["dp"]],
+            ["dashplate_flat_strike_design", ["dp"]],
+            ["dashplate_flat_strike_flow", ["dp"]]
+        ]
+    },
+    "dashplate_flat_mesh_k300_fam": {
+        "information":{
+            "authors":"Mathkuro",
+            "name":"Dash Plate Mesh — 300 km/h Afterburn"
+        },
+        "slotType" : "dashplate_meshes",
+        "flexbodies": [
+            ["mesh", "[group]:"],
+            ["dashplate_flat_body_xl", ["dp"]],
+            ["dashplate_flat_afterburn_design", ["dp"]],
+            ["dashplate_flat_afterburn_flow", ["dp"]]
+        ]
+    },
+    "dashplate_flat_mesh_k1000_fam": {
+        "information":{
+            "authors":"Mathkuro",
+            "name":"Dash Plate Mesh — 1000 km/h Warp"
+        },
+        "slotType" : "dashplate_meshes",
+        "flexbodies": [
+            ["mesh", "[group]:"],
+            ["dashplate_flat_body_xl", ["dp"]],
+            ["dashplate_flat_warp_design", ["dp"]],
+            ["dashplate_flat_warp_flow", ["dp"]]
         ]
     },
     "dashplate_flat_mesh_500kmh_cyberglass": {

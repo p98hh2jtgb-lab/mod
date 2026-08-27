@@ -96,9 +96,33 @@
         "metallicFactor": 0.15,
         "opacityMapUseUV": 1
       },
-      {},
-      {},
-      {}
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      }
     ],
     "activeLayers": 1,
     "castShadows": false,
@@ -150,9 +174,33 @@
         "metallicFactor": 0.15,
         "opacityMapUseUV": 1
       },
-      {},
-      {},
-      {}
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      }
     ],
     "activeLayers": 1,
     "castShadows": false,
@@ -204,9 +252,33 @@
         "metallicFactor": 0.15,
         "opacityMapUseUV": 1
       },
-      {},
-      {},
-      {}
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      }
     ],
     "activeLayers": 1,
     "castShadows": false,
@@ -258,9 +330,33 @@
         "metallicFactor": 0.15,
         "opacityMapUseUV": 1
       },
-      {},
-      {},
-      {}
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      },
+      {
+        "clearCoatFactor": null,
+        "clearCoatRoughnessFactor": null,
+        "emissiveFactor": null,
+        "instanceDiffuse": null,
+        "instanceOpacity": null,
+        "metallicFactor": null,
+        "opacityMapUseUV": null
+      }
     ],
     "activeLayers": 1,
     "castShadows": false,

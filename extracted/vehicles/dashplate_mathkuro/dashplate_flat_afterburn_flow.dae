@@ -15,7 +15,7 @@
     <geometry id="dashplate_flat_afterburn_flow-mesh" name="dashplate_flat_afterburn_flow">
       <mesh>
         <source id="dashplate_flat_afterburn_flow-positions">
-          <float_array id="dashplate_flat_afterburn_flow-positions-array" count="12">-1.5 -3 0.03 1.5 -3 0.03 1.5 3 0.03 -1.5 3 0.03</float_array>
+          <float_array id="dashplate_flat_afterburn_flow-positions-array" count="12">-3 -9 0.03 3 -9 0.03 3 9 0.03 -3 9 0.03</float_array>
           <technique_common><accessor source="#dashplate_flat_afterburn_flow-positions-array" count="4" stride="3"><param name="X" type="float"/><param name="Y" type="float"/><param name="Z" type="float"/></accessor></technique_common>
         </source>
         <source id="dashplate_flat_afterburn_flow-normals">
@@ -31,7 +31,7 @@
           <input semantic="VERTEX" source="#dashplate_flat_afterburn_flow-vertices" offset="0"/>
           <input semantic="NORMAL" source="#dashplate_flat_afterburn_flow-normals" offset="1"/>
           <input semantic="TEXCOORD" source="#dashplate_flat_afterburn_flow-map" offset="2" set="0"/>
-          <p>0 1 2 0 2 3</p>
+          <p>0 0 0 1 0 1 2 0 2 0 0 0 2 0 2 3 0 3</p>
         </triangles>
       </mesh>
     </geometry>
